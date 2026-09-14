@@ -6,16 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇭 CH 01 - xiaohe",
-        "🇨🇭 CH 02 - xiaohe"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaoliue",
+        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaoliue"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇭 CH 01 - xiaohe",
-        "🇨🇭 CH 02 - xiaohe"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaoliue",
+        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaoliue"
       ],
       "url": "https://www.google.com/generate_204"
     },

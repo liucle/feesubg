@@ -6,16 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇴 RO 01 - xiaoliue",
-        "🇷🇴 RO 02 - xiaoliue"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaoliue"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇴 RO 01 - xiaoliue",
-        "🇷🇴 RO 02 - xiaoliue"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaoliue"
       ],
       "url": "https://www.google.com/generate_204"
     },

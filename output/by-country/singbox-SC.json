@@ -6,20 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇮 FI 01 - xiaoliue",
-        "🇫🇮 FI 02 - xiaoliue",
-        "🇫🇮 FI 03 - xiaoliue",
-        "🇫🇮 FI 04 - xiaoliue"
+        "🇸🇨 SC 01 - xiaoliue"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇮 FI 01 - xiaoliue",
-        "🇫🇮 FI 02 - xiaoliue",
-        "🇫🇮 FI 03 - xiaoliue",
-        "🇫🇮 FI 04 - xiaoliue"
+        "🇸🇨 SC 01 - xiaoliue"
       ],
       "url": "https://www.google.com/generate_204"
     },

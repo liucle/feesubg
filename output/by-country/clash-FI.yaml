@@ -6,9 +6,9 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - xiaoliue
   type: vless
-  server: 151.101.56.6
+  server: a2.arshia-nova.ir
   port: 443
-  uuid: bd5bbbac-adc3-4b23-d3ac-8506694c0ef9
+  uuid: cc3ec459-8d76-4066-ab4b-2614608f1afb
   udp: true
   tls: true
   skip-cert-verify: true
@@ -34,69 +34,6 @@ proxies:
       Host: xi.tbv.ccwu.cc
 - name: 🇫🇮 FI 03 - xiaoliue
   type: vless
-  server: 212.104.128.244
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /proxyip=us.xiabibi.cf
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇫🇮 FI 04 - xiaoliue
-  type: vless
-  server: 212.104.128.206
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /proxyip=us.xiabibi.cf
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇫🇮 FI 05 - xiaoliue
-  type: vless
-  server: 212.104.128.45
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /proxyip=us.xiabibi.cf
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇫🇮 FI 06 - xiaoliue
-  type: vless
-  server: 212.104.128.0
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /proxyip=us.xiabibi.cf
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇫🇮 FI 07 - xiaoliue
-  type: ss
-  server: 82.47.186.18
-  port: 19290
-  cipher: aes-128-gcm
-  password: o2rw2hICwu1blrr_gZAl2Q
-  udp: true
-- name: 🇫🇮 FI 08 - xiaoliue
-  type: vless
   server: 185.79.138.71
   port: 448
   uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
@@ -107,7 +44,7 @@ proxies:
     public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
   servername: www.samsung.com
   client-fingerprint: chrome
-- name: 🇫🇮 FI 09 - xiaoliue
+- name: 🇫🇮 FI 04 - xiaoliue
   type: vless
   server: 185.79.138.71
   port: 448
@@ -128,11 +65,6 @@ proxy-groups:
   - 🇫🇮 FI 02 - xiaoliue
   - 🇫🇮 FI 03 - xiaoliue
   - 🇫🇮 FI 04 - xiaoliue
-  - 🇫🇮 FI 05 - xiaoliue
-  - 🇫🇮 FI 06 - xiaoliue
-  - 🇫🇮 FI 07 - xiaoliue
-  - 🇫🇮 FI 08 - xiaoliue
-  - 🇫🇮 FI 09 - xiaoliue
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -142,10 +74,5 @@ proxy-groups:
   - 🇫🇮 FI 02 - xiaoliue
   - 🇫🇮 FI 03 - xiaoliue
   - 🇫🇮 FI 04 - xiaoliue
-  - 🇫🇮 FI 05 - xiaoliue
-  - 🇫🇮 FI 06 - xiaoliue
-  - 🇫🇮 FI 07 - xiaoliue
-  - 🇫🇮 FI 08 - xiaoliue
-  - 🇫🇮 FI 09 - xiaoliue
 rules:
 - MATCH,PROXIES

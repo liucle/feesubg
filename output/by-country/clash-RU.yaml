@@ -13,33 +13,6 @@ proxies:
   udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaoliue
   type: ss
-  server: 194.87.196.13
-  port: 9011
-  cipher: aes-256-gcm
-  password: 4938e975724d0ed1
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaoliue
-  type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: b69b43d1-091d-4d7c-90b2-7a8bbad9d6a9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiY0U2T212Y21yeEhUZHRKYSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
-    headers:
-      Host: BItter-CreDIT-61b8.b76EbA0aBb.wORkerS.dEv
-- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaoliue
-  type: ss
-  server: 195.133.5.102
-  port: 9011
-  cipher: aes-256-gcm
-  password: 895b4b796a357570
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaoliue
-  type: ss
   server: 195.58.48.137
   port: 9019
   cipher: aes-256-gcm
@@ -52,9 +25,6 @@ proxy-groups:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - xiaoliue
   - 🇷🇺 俄罗斯 (Russia) 02 - xiaoliue
-  - 🇷🇺 俄罗斯 (Russia) 03 - xiaoliue
-  - 🇷🇺 俄罗斯 (Russia) 04 - xiaoliue
-  - 🇷🇺 俄罗斯 (Russia) 05 - xiaoliue
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -62,8 +32,5 @@ proxy-groups:
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - xiaoliue
   - 🇷🇺 俄罗斯 (Russia) 02 - xiaoliue
-  - 🇷🇺 俄罗斯 (Russia) 03 - xiaoliue
-  - 🇷🇺 俄罗斯 (Russia) 04 - xiaoliue
-  - 🇷🇺 俄罗斯 (Russia) 05 - xiaoliue
 rules:
 - MATCH,PROXIES

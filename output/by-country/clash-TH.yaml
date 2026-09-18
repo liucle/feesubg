@@ -6,18 +6,18 @@ log-level: info
 proxies:
 - name: 🇹🇭 TH 01 - xiaoliue
   type: vless
-  server: 45.77.241.190
-  port: 8441
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  server: 104.18.26.90
+  port: 443
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: cdn8848.776676.xyz
+  servername: v2ray.simspeedup.com
   network: ws
   ws-opts:
-    path: /act/company/intro
+    path: /ws
     headers:
-      Host: cdn8848.776676.xyz
+      Host: v2ray.simspeedup.com
 - name: 🇹🇭 TH 02 - xiaoliue
   type: vless
   server: 103.86.49.57

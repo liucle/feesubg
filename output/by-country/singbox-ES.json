@@ -6,14 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇭 CH 01 - xiaoliue"
+        "🇪🇸 西班牙 (Spain) 01 - xiaoliue",
+        "🇪🇸 西班牙 (Spain) 02 - xiaoliue",
+        "🇪🇸 西班牙 (Spain) 03 - xiaoliue"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇭 CH 01 - xiaoliue"
+        "🇪🇸 西班牙 (Spain) 01 - xiaoliue",
+        "🇪🇸 西班牙 (Spain) 02 - xiaoliue",
+        "🇪🇸 西班牙 (Spain) 03 - xiaoliue"
       ],
       "url": "https://www.google.com/generate_204"
     },

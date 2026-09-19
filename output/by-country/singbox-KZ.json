@@ -6,14 +6,24 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇿 KZ 01 - xiaoliue"
+        "🇰🇿 KZ 01 - xiaoliue",
+        "🇰🇿 KZ 02 - xiaoliue",
+        "🇰🇿 KZ 03 - xiaoliue",
+        "🇰🇿 KZ 04 - xiaoliue",
+        "🇰🇿 KZ 05 - xiaoliue",
+        "🇰🇿 KZ 06 - xiaoliue"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇿 KZ 01 - xiaoliue"
+        "🇰🇿 KZ 01 - xiaoliue",
+        "🇰🇿 KZ 02 - xiaoliue",
+        "🇰🇿 KZ 03 - xiaoliue",
+        "🇰🇿 KZ 04 - xiaoliue",
+        "🇰🇿 KZ 05 - xiaoliue",
+        "🇰🇿 KZ 06 - xiaoliue"
       ],
       "url": "https://www.google.com/generate_204"
     },

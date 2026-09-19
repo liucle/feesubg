@@ -6,14 +6,22 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇿 CZ 01 - xiaoliue"
+        "🇨🇿 CZ 01 - xiaoliue",
+        "🇨🇿 CZ 02 - xiaoliue",
+        "🇨🇿 CZ 03 - xiaoliue",
+        "🇨🇿 CZ 04 - xiaoliue",
+        "🇨🇿 CZ 05 - xiaoliue"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇿 CZ 01 - xiaoliue"
+        "🇨🇿 CZ 01 - xiaoliue",
+        "🇨🇿 CZ 02 - xiaoliue",
+        "🇨🇿 CZ 03 - xiaoliue",
+        "🇨🇿 CZ 04 - xiaoliue",
+        "🇨🇿 CZ 05 - xiaoliue"
       ],
       "url": "https://www.google.com/generate_204"
     },

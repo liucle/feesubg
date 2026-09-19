@@ -6,28 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇪 BE 01 - xiaoliue",
-        "🇧🇪 BE 02 - xiaoliue",
-        "🇧🇪 BE 03 - xiaoliue",
-        "🇧🇪 BE 04 - xiaoliue",
-        "🇧🇪 BE 05 - xiaoliue",
-        "🇧🇪 BE 06 - xiaoliue",
-        "🇧🇪 BE 07 - xiaoliue",
-        "🇧🇪 BE 08 - xiaoliue"
+        "🇧🇪 BE 01 - xiaoliue"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇪 BE 01 - xiaoliue",
-        "🇧🇪 BE 02 - xiaoliue",
-        "🇧🇪 BE 03 - xiaoliue",
-        "🇧🇪 BE 04 - xiaoliue",
-        "🇧🇪 BE 05 - xiaoliue",
-        "🇧🇪 BE 06 - xiaoliue",
-        "🇧🇪 BE 07 - xiaoliue",
-        "🇧🇪 BE 08 - xiaoliue"
+        "🇧🇪 BE 01 - xiaoliue"
       ],
       "url": "https://www.google.com/generate_204"
     },

@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇸🇦 SA 01 - xiaoliue
   type: vless
-  server: 91.209.253.216
+  server: 91.209.253.119
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -20,6 +20,20 @@ proxies:
       Host: nb.lovecf.ggff.net
 - name: 🇸🇦 SA 02 - xiaoliue
   type: vless
+  server: 91.209.253.244
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nb.lovecf.ggff.net
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: nb.lovecf.ggff.net
+- name: 🇸🇦 SA 03 - xiaoliue
+  type: vless
   server: 91.209.253.119
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
@@ -32,63 +46,7 @@ proxies:
     path: /
     headers:
       Host: nb.lovecf.ggff.net
-- name: 🇸🇦 SA 03 - xiaoliue
-  type: vless
-  server: 91.209.253.250
-  port: 443
-  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nb.lovecf.ggff.net
-  network: ws
-  ws-opts:
-    path: /proxyip=us.xiabibi.cf
-    headers:
-      Host: nb.lovecf.ggff.net
 - name: 🇸🇦 SA 04 - xiaoliue
-  type: vless
-  server: 91.209.253.109
-  port: 443
-  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nb.lovecf.ggff.net
-  network: ws
-  ws-opts:
-    path: /proxyip=us.xiabibi.cf
-    headers:
-      Host: nb.lovecf.ggff.net
-- name: 🇸🇦 SA 05 - xiaoliue
-  type: vless
-  server: 91.209.253.109
-  port: 443
-  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nb.lovecf.ggff.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: nb.lovecf.ggff.net
-- name: 🇸🇦 SA 06 - xiaoliue
-  type: vless
-  server: 91.209.253.42
-  port: 443
-  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nb.lovecf.ggff.net
-  network: ws
-  ws-opts:
-    path: /proxyip=us.xiabibi.cf
-    headers:
-      Host: nb.lovecf.ggff.net
-- name: 🇸🇦 SA 07 - xiaoliue
   type: vless
   server: 91.209.253.68
   port: 443
@@ -102,9 +60,9 @@ proxies:
     path: /
     headers:
       Host: nb.lovecf.ggff.net
-- name: 🇸🇦 SA 08 - xiaoliue
+- name: 🇸🇦 SA 05 - xiaoliue
   type: vless
-  server: 91.209.253.229
+  server: 91.209.253.68
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -114,6 +72,34 @@ proxies:
   network: ws
   ws-opts:
     path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: nb.lovecf.ggff.net
+- name: 🇸🇦 SA 06 - xiaoliue
+  type: vless
+  server: 91.209.253.216
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nb.lovecf.ggff.net
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: nb.lovecf.ggff.net
+- name: 🇸🇦 SA 07 - xiaoliue
+  type: vless
+  server: 91.209.253.109
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nb.lovecf.ggff.net
+  network: ws
+  ws-opts:
+    path: /
     headers:
       Host: nb.lovecf.ggff.net
 proxy-groups:
@@ -128,7 +114,6 @@ proxy-groups:
   - 🇸🇦 SA 05 - xiaoliue
   - 🇸🇦 SA 06 - xiaoliue
   - 🇸🇦 SA 07 - xiaoliue
-  - 🇸🇦 SA 08 - xiaoliue
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -141,6 +126,5 @@ proxy-groups:
   - 🇸🇦 SA 05 - xiaoliue
   - 🇸🇦 SA 06 - xiaoliue
   - 🇸🇦 SA 07 - xiaoliue
-  - 🇸🇦 SA 08 - xiaoliue
 rules:
 - MATCH,PROXIES

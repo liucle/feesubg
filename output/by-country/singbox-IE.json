@@ -6,18 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇭 CH 01 - xiaoliue",
-        "🇨🇭 CH 02 - xiaoliue",
-        "🇨🇭 CH 03 - xiaoliue"
+        "🇮🇪 IE 01 - xiaoliue"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇭 CH 01 - xiaoliue",
-        "🇨🇭 CH 02 - xiaoliue",
-        "🇨🇭 CH 03 - xiaoliue"
+        "🇮🇪 IE 01 - xiaoliue"
       ],
       "url": "https://www.google.com/generate_204"
     },

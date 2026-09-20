@@ -19,15 +19,24 @@ proxies:
     headers:
       Host: ty986gfazs.cainiaohub.xyz
 - name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaoliue
-  type: ss
-  server: 36.224.185.173
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: b1ae0fce-9340-4f2e-882d-fdb2218e2e2b
+  type: vmess
+  server: dee2309db4944c248b6d4372c6641e25.oylfmxz.cn
+  port: 443
+  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
+  alterId: 0
+  cipher: auto
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
 - name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaoliue
   type: vmess
-  server: dee2309db4se3g5s1d65g672c6641e25.oylfmxz.cn
+  server: dee2309db4944c248b6d4672c6641e25.oylfmxz.cn
   port: 443
   uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
   alterId: 0
@@ -43,34 +52,6 @@ proxies:
       Host: ''
 - name: 🇰🇷 韩国 (South Korea) 04 (家宽) - xiaoliue
   type: vless
-  server: 172.64.53.87
-  port: 2087
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-  network: ws
-  ws-opts:
-    path: ?ed=2560
-    headers:
-      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-- name: 🇰🇷 韩国 (South Korea) 05 (家宽) - xiaoliue
-  type: vless
-  server: 188.114.97.6
-  port: 2087
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fx3h2kf8xn.fx6hsv0.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: fx3h2kf8xn.fx6hsv0.ccwu.cc
-- name: 🇰🇷 韩国 (South Korea) 06 (家宽) - xiaoliue
-  type: vless
   server: 104.16.10.185
   port: 443
   uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
@@ -83,9 +64,9 @@ proxies:
     path: /?ed=2560
     headers:
       Host: fx3h2kf8xn.fx6hsv0.ccwu.cc
-- name: 🇰🇷 韩国 (South Korea) 07 (家宽) - xiaoliue
+- name: 🇰🇷 韩国 (South Korea) 05 (家宽) - xiaoliue
   type: vless
-  server: 172.64.52.230
+  server: 104.16.150.108
   port: 2087
   uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
   udp: true
@@ -94,12 +75,40 @@ proxies:
   servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
   network: ws
   ws-opts:
-    path: /?ed=2560
+    path: ?ed=2560
     headers:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+- name: 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - xiaoliue
+  type: vmess
+  server: dee2309db4se3g5s1d65g672c6641e25.oylfmxz.cn
+  port: 443
+  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: dee2309db4se3g5s1d65g672c6641e25.oylfmxz.cn
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dee2309db4se3g5s1d65g672c6641e25.oylfmxz.cn
+- name: 🇹🇼 中国台湾 (Taiwan) 07 (家宽) - xiaoliue
+  type: vless
+  server: hinet1.2yly.com
+  port: 24215
+  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
 - name: 🇰🇷 韩国 (South Korea) 08 (家宽) - xiaoliue
   type: vless
-  server: 172.64.53.42
+  server: 104.18.38.47
   port: 2087
   uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
   udp: true
@@ -112,21 +121,39 @@ proxies:
     headers:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
 - name: 🇹🇼 中国台湾 (Taiwan) 09 (家宽) - xiaoliue
-  type: vmess
-  server: dee2309db4944c248b6d4672c6641e25.oylfmxz.cn
+  type: ss
+  server: 36.224.185.173
+  port: 50099
+  cipher: chacha20-ietf-poly1305
+  password: b1ae0fce-9340-4f2e-882d-fdb2218e2e2b
+  udp: true
+- name: 🇳🇱 荷兰 (Netherlands) 10 (家宽) - xiaoliue
+  type: vless
+  server: 162.159.153.4
   port: 443
-  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
-  alterId: 0
-  cipher: auto
+  uuid: f2a73750-3087-48ff-a763-1348c15dce68
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  servername: rAyAn-007.mAxImA.DpDnS.OrG
   network: ws
   ws-opts:
-    path: ''
+    path: /?ed=2560
     headers:
-      Host: ''
+      Host: rAyAn-007.mAxImA.DpDnS.OrG
+- name: 🇮🇩 ID 11 (家宽) - xiaoliue
+  type: vless
+  server: 154.197.75.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime37.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -137,10 +164,12 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaoliue
   - 🇰🇷 韩国 (South Korea) 04 (家宽) - xiaoliue
   - 🇰🇷 韩国 (South Korea) 05 (家宽) - xiaoliue
-  - 🇰🇷 韩国 (South Korea) 06 (家宽) - xiaoliue
-  - 🇰🇷 韩国 (South Korea) 07 (家宽) - xiaoliue
+  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - xiaoliue
+  - 🇹🇼 中国台湾 (Taiwan) 07 (家宽) - xiaoliue
   - 🇰🇷 韩国 (South Korea) 08 (家宽) - xiaoliue
   - 🇹🇼 中国台湾 (Taiwan) 09 (家宽) - xiaoliue
+  - 🇳🇱 荷兰 (Netherlands) 10 (家宽) - xiaoliue
+  - 🇮🇩 ID 11 (家宽) - xiaoliue
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -151,9 +180,11 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaoliue
   - 🇰🇷 韩国 (South Korea) 04 (家宽) - xiaoliue
   - 🇰🇷 韩国 (South Korea) 05 (家宽) - xiaoliue
-  - 🇰🇷 韩国 (South Korea) 06 (家宽) - xiaoliue
-  - 🇰🇷 韩国 (South Korea) 07 (家宽) - xiaoliue
+  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - xiaoliue
+  - 🇹🇼 中国台湾 (Taiwan) 07 (家宽) - xiaoliue
   - 🇰🇷 韩国 (South Korea) 08 (家宽) - xiaoliue
   - 🇹🇼 中国台湾 (Taiwan) 09 (家宽) - xiaoliue
+  - 🇳🇱 荷兰 (Netherlands) 10 (家宽) - xiaoliue
+  - 🇮🇩 ID 11 (家宽) - xiaoliue
 rules:
 - MATCH,PROXIES

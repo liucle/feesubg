@@ -5,39 +5,30 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaoliue
-  type: ss
-  server: 62.113.41.228
-  port: 2055
-  cipher: chacha20-ietf-poly1305
-  password: 7nzDcoQQxUYU35N5ngbSAg
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaoliue
   type: vless
-  server: 104.21.96.1
-  port: 443
-  uuid: 0836463b-214f-4af6-aa85-85a56a62388e
+  server: 157.173.125.214
+  port: 2087
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: d2127a49-flat-wood-c4b5.milia-akbarpoor.workers.dev
+  servername: cdn8848.776676.xyz
   network: ws
   ws-opts:
-    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI?ed=512
+    path: '%2Fredirect%2Fchina%2Fview%3Fed%3D2560'
     headers:
-      Host: d2127a49-flat-wood-c4b5.milia-akbarpoor.workers.dev
+      Host: cdn8848.776676.xyz
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - xiaoliue
-  - 🇷🇺 俄罗斯 (Russia) 02 - xiaoliue
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - xiaoliue
-  - 🇷🇺 俄罗斯 (Russia) 02 - xiaoliue
 rules:
 - MATCH,PROXIES

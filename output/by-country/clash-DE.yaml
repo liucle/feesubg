@@ -6,21 +6,22 @@ log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 - xiaoliue
   type: vless
-  server: 57.129.41.216
-  port: 80
-  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
+  server: 81.95.4.189
+  port: 443
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: bab-6.site
   network: ws
   ws-opts:
-    path: /vless/
+    path: /vws/
     headers:
-      Host: OV-Germany1.09vpn.com
+      Host: bab-6.site
 - name: 🇩🇪 德国 (Germany) 02 - xiaoliue
   type: vless
-  server: 193.181.216.117
-  port: 2053
+  server: 147.90.89.173
+  port: 443
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
   tls: true
@@ -32,19 +33,9 @@ proxies:
     headers:
       Host: cdn8848.776676.xyz
 - name: 🇩🇪 德国 (Germany) 03 - xiaoliue
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 04 - xiaoliue
   type: vless
-  server: 5.104.107.80
-  port: 2053
+  server: 176.124.220.173
+  port: 8443
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
   tls: true
@@ -55,7 +46,24 @@ proxies:
     path: /
     headers:
       Host: cdn8848.776676.xyz
+- name: 🇩🇪 德国 (Germany) 04 - xiaoliue
+  type: ss
+  server: 130.61.227.189
+  port: 59924
+  cipher: 2022-blake3-chacha20-poly1305
+  password: EPNhE9qvdzvZpDTA6OzRwv1CsK7SFcOahpqDmNOGM/w=
+  udp: true
 - name: 🇩🇪 德国 (Germany) 05 - xiaoliue
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 06 - xiaoliue
   type: vless
   server: 31.59.46.140
   port: 8443
@@ -69,204 +77,14 @@ proxies:
     path: '%2Ftravel%2Fintro%3Fed%3D2560'
     headers:
       Host: cdn8848.776676.xyz
-- name: 🇩🇪 德国 (Germany) 06 - xiaoliue
-  type: ss
-  server: 185.226.172.8
-  port: 8008
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
-  udp: true
 - name: 🇩🇪 德国 (Germany) 07 - xiaoliue
-  type: vless
-  server: 162.55.242.208
-  port: 2053
-  uuid: 659ffdfa-47d2-47d7-af40-5afe0907eead
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: jeS6Zu-p1Gf6GtraIAbpgQoSeT26Xq3GqgqVxccbVhY
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 08 - xiaoliue
-  type: vless
-  server: 31.59.121.156
-  port: 2053
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇩🇪 德国 (Germany) 09 - xiaoliue
-  type: vless
-  server: 185.125.100.76
-  port: 8443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /trade/game/movies
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇩🇪 德国 (Germany) 10 - xiaoliue
-  type: vless
-  server: 132.243.203.207
-  port: 8443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: '%2Flives%3Fed%3D2560'
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇩🇪 德国 (Germany) 11 - xiaoliue
-  type: vless
-  server: 147.90.89.173
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /source/buy/f?ed=2560fp=chrome
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇩🇪 德国 (Germany) 12 - xiaoliue
-  type: vless
-  server: 164.92.137.46
-  port: 2083
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: '%2Fbt%2Fstreaming%2Fad%3Fed%3D2560'
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇩🇪 德国 (Germany) 13 - xiaoliue
-  type: vless
-  server: 172.67.185.153
-  port: 2053
-  uuid: 522df6b1-a110-4163-a92f-9935561b1f77
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: de.huge-b.com
-  network: ws
-  ws-opts:
-    path: /@Artemis_Vpn
-    headers:
-      Host: de.huge-b.com
-- name: 🇩🇪 德国 (Germany) 14 - xiaoliue
-  type: vless
-  server: 132.243.203.218
-  port: 8443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: '%2Fv%3Fed%3D2560'
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇩🇪 德国 (Germany) 15 - xiaoliue
-  type: vless
-  server: 202.181.177.8
-  port: 8443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /channels/act
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇩🇪 德国 (Germany) 16 - xiaoliue
-  type: ss
-  server: 2.58.81.221
-  port: 443
-  cipher: aes-256-gcm
-  password: kKEd0rBrd56Furjz
-  udp: true
-- name: 🇩🇪 德国 (Germany) 17 - xiaoliue
-  type: vless
-  server: 103.251.167.112
-  port: 8443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /library/lang
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇩🇪 德国 (Germany) 18 - xiaoliue
-  type: vless
-  server: 46.101.230.110
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /drama?ed=2560
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇩🇪 德国 (Germany) 19 - xiaoliue
-  type: vless
-  server: 164.90.166.120
-  port: 443
-  uuid: 8525fe74-67e6-4a55-8a26-95f227bd1384
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: damp-dawn-3a96.alvlirm123.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: damp-dawn-3a96.alvlirm123.workers.dev
-- name: 🇩🇪 德国 (Germany) 20 - xiaoliue
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 21 - xiaoliue
   type: ss
   server: 185.226.172.8
   port: 8008
   cipher: aes-256-gcm
   password: XKFKl2rULjIp74
   udp: true
-- name: 🇩🇪 德国 (Germany) 22 - xiaoliue
+- name: 🇩🇪 德国 (Germany) 08 - xiaoliue
   type: vless
   server: 132.243.203.243
   port: 8443
@@ -280,7 +98,47 @@ proxies:
     path: '%2Farchive%3Fed%3D2560'
     headers:
       Host: cdn8848.776676.xyz
-- name: 🇩🇪 德国 (Germany) 23 - xiaoliue
+- name: 🇩🇪 德国 (Germany) 09 - xiaoliue
+  type: vless
+  server: 193.181.216.117
+  port: 2053
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇩🇪 德国 (Germany) 10 - xiaoliue
+  type: vless
+  server: 162.55.242.208
+  port: 2053
+  uuid: 659ffdfa-47d2-47d7-af40-5afe0907eead
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: jeS6Zu-p1Gf6GtraIAbpgQoSeT26Xq3GqgqVxccbVhY
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 11 - xiaoliue
+  type: vless
+  server: 103.31.77.108
+  port: 2053
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: /channels/act
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇩🇪 德国 (Germany) 12 - xiaoliue
   type: vless
   server: 146.185.178.18
   port: 443
@@ -294,10 +152,17 @@ proxies:
     path: /
     headers:
       Host: cdn8848.776676.xyz
-- name: 🇩🇪 德国 (Germany) 24 - xiaoliue
+- name: 🇩🇪 德国 (Germany) 13 - xiaoliue
+  type: ss
+  server: 2.58.81.221
+  port: 80
+  cipher: aes-256-gcm
+  password: kKEd0rBrd56Furjz
+  udp: true
+- name: 🇩🇪 德国 (Germany) 14 - xiaoliue
   type: vless
-  server: 109.107.155.76
-  port: 2053
+  server: 194.154.29.139
+  port: 8443
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
   tls: true
@@ -305,218 +170,52 @@ proxies:
   servername: cdn8848.776676.xyz
   network: ws
   ws-opts:
-    path: /tv/member/auth?ed=2560fp=chrome
+    path: '%2Fretrieve%2Ftxt%3Fed%3D2560'
     headers:
       Host: cdn8848.776676.xyz
-- name: 🇩🇪 德国 (Germany) 25 - xiaoliue
+- name: 🇩🇪 德国 (Germany) 15 - xiaoliue
   type: vless
-  server: 46.101.230.110
+  server: de3-node.rumedia-cdn.com
+  port: 2096
+  uuid: 0a2dde28-70da-4863-a06f-35d007d94d35
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: st3f6d.rumedia-cdn.com
+  network: ws
+  ws-opts:
+    path: /cdn/v3/live
+    headers:
+      Host: st3f6d.rumedia-cdn.com
+- name: 🇩🇪 德国 (Germany) 16 - xiaoliue
+  type: vless
+  server: 2.26.125.38
+  port: 2096
+  uuid: 0a2dde28-70da-4863-a06f-35d007d94d35
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: st3f6d.rumedia-cdn.com
+  network: ws
+  ws-opts:
+    path: /cdn/v3/live
+    headers:
+      Host: st3f6d.rumedia-cdn.com
+- name: 🇩🇪 德国 (Germany) 17 - xiaoliue
+  type: ss
+  server: 130.61.34.119
+  port: 59924
+  cipher: 2022-blake3-chacha20-poly1305
+  password: JUDchdpxsrrwvJVal4OaHtwjONijBe4gAINdg2AFQaI=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 18 - xiaoliue
+  type: ss
+  server: 2.58.81.221
   port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  cipher: aes-256-gcm
+  password: kKEd0rBrd56Furjz
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /drama?ed=2560
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇩🇪 德国 (Germany) 26 - xiaoliue
-  type: vless
-  server: 5.101.115.117
-  port: 8443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /magnet/thread?ed=2560fp=chrome
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇩🇪 德国 (Germany) 27 - xiaoliue
-  type: vless
-  server: 188.166.49.168
-  port: 2083
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇩🇪 德国 (Germany) 28 - xiaoliue
-  type: vless
-  server: 109.107.155.76
-  port: 2053
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /tv/member/auth?ed=2560fp=chrome
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇩🇪 德国 (Germany) 29 - xiaoliue
-  type: vless
-  server: 31.58.76.68
-  port: 8443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: '%2Fnew%2Fdh%3Fed%3D2560'
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇩🇪 德国 (Germany) 30 - xiaoliue
-  type: vless
-  server: 188.114.97.1
-  port: 2053
-  uuid: 0b3e7958-e5c4-498f-ab21-b49686f95d2d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bold-term-4edd.mbigspot.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: bold-term-4edd.mbigspot.workers.dev
-- name: 🇩🇪 德国 (Germany) 31 - xiaoliue
-  type: vless
-  server: 172.66.44.124
-  port: 8443
-  uuid: b2f2f9f2-1864-48ea-839b-22815faff1f1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
-- name: 🇩🇪 德国 (Germany) 32 - xiaoliue
-  type: vless
-  server: 188.130.207.30
-  port: 2053
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇩🇪 德国 (Germany) 33 - xiaoliue
-  type: vless
-  server: 64.225.65.116
-  port: 8443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: '%2Fbd%2Fpictures%3Fed%3D2560'
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇩🇪 德国 (Germany) 34 - xiaoliue
-  type: vless
-  server: 138.68.142.165
-  port: 2053
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /resource/channel
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇩🇪 德国 (Germany) 35 - xiaoliue
-  type: vless
-  server: 144.31.28.106
-  port: 8443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /trade
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇩🇪 德国 (Germany) 36 - xiaoliue
-  type: vless
-  server: 31.58.76.68
-  port: 8443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: '%2Fnew%2Fdh%3Fed%3D2560'
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇩🇪 德国 (Germany) 37 - xiaoliue
-  type: vless
-  server: 162.55.242.208
-  port: 2053
-  uuid: 659ffdfa-47d2-47d7-af40-5afe0907eead
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: jeS6Zu-p1Gf6GtraIAbpgQoSeT26Xq3GqgqVxccbVhY
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 38 - xiaoliue
-  type: vless
-  server: 172.237.120.201
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /edu/group?ed=2560fp=chrome
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇩🇪 德国 (Germany) 39 - xiaoliue
-  type: vless
-  server: 157.173.125.214
-  port: 2087
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: '%2Fredirect%2Fchina%2Fview%3Fed%3D2560'
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇩🇪 德国 (Germany) 40 - xiaoliue
+- name: 🇩🇪 德国 (Germany) 19 - xiaoliue
   type: vless
   server: 217.12.206.160
   port: 81
@@ -530,9 +229,9 @@ proxies:
     path: '%2Fmembers%2Fplaylist%3Fed%3D2560'
     headers:
       Host: cdn8848.776676.xyz
-- name: 🇩🇪 德国 (Germany) 41 - xiaoliue
+- name: 🇩🇪 德国 (Germany) 20 - xiaoliue
   type: vless
-  server: 45.38.139.23
+  server: 64.225.65.116
   port: 8443
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
@@ -541,10 +240,59 @@ proxies:
   servername: cdn8848.776676.xyz
   network: ws
   ws-opts:
-    path: '%2Fjumping%2Fclass%2Fbt%3Fed%3D2560'
+    path: '%2Fbd%2Fpictures%3Fed%3D2560'
     headers:
       Host: cdn8848.776676.xyz
-- name: 🇩🇪 德国 (Germany) 42 - xiaoliue
+- name: 🇩🇪 德国 (Germany) 21 - xiaoliue
+  type: vless
+  server: 103.251.167.112
+  port: 8443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: /library/lang
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇩🇪 德国 (Germany) 22 - xiaoliue
+  type: ss
+  server: 130.61.34.119
+  port: 59924
+  cipher: 2022-blake3-chacha20-poly1305
+  password: JUDchdpxsrrwvJVal4OaHtwjONijBe4gAINdg2AFQaI=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 23 - xiaoliue
+  type: vless
+  server: 202.181.177.8
+  port: 8443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: /channels/act
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇩🇪 德国 (Germany) 24 - xiaoliue
+  type: vless
+  server: 188.130.207.30
+  port: 2053
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇩🇪 德国 (Germany) 25 - xiaoliue
   type: vless
   server: 5.101.114.44
   port: 2053
@@ -558,14 +306,118 @@ proxies:
     path: /collection/directory?ed=2560
     headers:
       Host: cdn8848.776676.xyz
-- name: 🇩🇪 德国 (Germany) 43 - xiaoliue
-  type: ss
-  server: 8.209.74.72
-  port: 20001
-  cipher: chacha20-ietf-poly1305
-  password: PWpjPo3tqhPN4yRZ
+- name: 🇩🇪 德国 (Germany) 26 - xiaoliue
+  type: vless
+  server: 2.26.125.38
+  port: 2096
+  uuid: 0a2dde28-70da-4863-a06f-35d007d94d35
   udp: true
-- name: 🇩🇪 德国 (Germany) 44 - xiaoliue
+  tls: true
+  skip-cert-verify: true
+  servername: st3f6d.rumedia-cdn.com
+  network: ws
+  ws-opts:
+    path: /cdn/v3/live
+    headers:
+      Host: st3f6d.rumedia-cdn.com
+- name: 🇩🇪 德国 (Germany) 27 - xiaoliue
+  type: vless
+  server: 89.110.66.154
+  port: 443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇩🇪 德国 (Germany) 28 - xiaoliue
+  type: vless
+  server: 185.125.100.76
+  port: 8443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: /trade/game/movies
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇩🇪 德国 (Germany) 29 - xiaoliue
+  type: vless
+  server: 188.166.49.168
+  port: 2083
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇩🇪 德国 (Germany) 30 - xiaoliue
+  type: vless
+  server: 81.95.4.189
+  port: 443
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bab-6.site
+  network: ws
+  ws-opts:
+    path: /vws/
+    headers:
+      Host: bab-6.site
+- name: 🇩🇪 德国 (Germany) 31 - xiaoliue
+  type: vless
+  server: 81.95.4.189
+  port: 443
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bab-6.site
+  network: ws
+  ws-opts:
+    path: /vws/
+    headers:
+      Host: bab-6.site
+- name: 🇩🇪 德国 (Germany) 32 - xiaoliue
+  type: vless
+  server: 132.243.203.207
+  port: 8443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: '%2Flives%3Fed%3D2560'
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇩🇪 德国 (Germany) 33 - xiaoliue
+  type: vless
+  server: 57.129.41.216
+  port: 80
+  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: OV-Germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 34 - xiaoliue
   type: vless
   server: 172.237.120.201
   port: 443
@@ -579,7 +431,21 @@ proxies:
     path: /
     headers:
       Host: cdn8848.776676.xyz
-- name: 🇩🇪 德国 (Germany) 45 - xiaoliue
+- name: 🇩🇪 德国 (Germany) 35 - xiaoliue
+  type: vless
+  server: 132.243.203.218
+  port: 8443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: '%2Fv%3Fed%3D2560'
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇩🇪 德国 (Germany) 36 - xiaoliue
   type: vless
   server: 46.101.230.110
   port: 443
@@ -591,6 +457,124 @@ proxies:
   network: ws
   ws-opts:
     path: /drama?ed=2560
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇩🇪 德国 (Germany) 37 - xiaoliue
+  type: vless
+  server: 157.228.142.148
+  port: 8443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: '%2Fact%2Frank%2Flang%3Fed%3D2560'
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇩🇪 德国 (Germany) 38 - xiaoliue
+  type: vless
+  server: 157.173.125.214
+  port: 2087
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: '%2Fredirect%2Fchina%2Fview%3Fed%3D2560'
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇩🇪 德国 (Germany) 39 - xiaoliue
+  type: vless
+  server: 162.55.242.208
+  port: 2053
+  uuid: 659ffdfa-47d2-47d7-af40-5afe0907eead
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: jeS6Zu-p1Gf6GtraIAbpgQoSeT26Xq3GqgqVxccbVhY
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 40 - xiaoliue
+  type: vless
+  server: 138.68.142.165
+  port: 2053
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: /resource/channel
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇩🇪 德国 (Germany) 41 - xiaoliue
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 42 - xiaoliue
+  type: vless
+  server: 162.55.242.208
+  port: 2053
+  uuid: 659ffdfa-47d2-47d7-af40-5afe0907eead
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: jeS6Zu-p1Gf6GtraIAbpgQoSeT26Xq3GqgqVxccbVhY
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 43 - xiaoliue
+  type: vless
+  server: 157.173.125.214
+  port: 2087
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: '%2Fredirect%2Fchina%2Fview%3Fed%3D2560'
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇩🇪 德国 (Germany) 44 - xiaoliue
+  type: vless
+  server: 104.21.236.63
+  port: 443
+  uuid: 44eae030-290b-4083-8102-6f8bab05701b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cfvvv-ev1.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cfvvv-ev1.pages.dev
+- name: 🇩🇪 德国 (Germany) 45 - xiaoliue
+  type: vless
+  server: 5.104.107.80
+  port: 2053
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: /
     headers:
       Host: cdn8848.776676.xyz
 - name: 🇩🇪 德国 (Germany) 46 - xiaoliue
@@ -609,20 +593,6 @@ proxies:
       Host: cdn8848.776676.xyz
 - name: 🇩🇪 德国 (Germany) 47 - xiaoliue
   type: vless
-  server: 5.101.114.44
-  port: 2053
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /collection/directory?ed=2560
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇩🇪 德国 (Germany) 48 - xiaoliue
-  type: vless
   server: 5.101.115.117
   port: 8443
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
@@ -635,9 +605,23 @@ proxies:
     path: /
     headers:
       Host: cdn8848.776676.xyz
+- name: 🇩🇪 德国 (Germany) 48 - xiaoliue
+  type: vless
+  server: 164.92.137.46
+  port: 2083
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: '%2Fbt%2Fstreaming%2Fad%3Fed%3D2560'
+    headers:
+      Host: cdn8848.776676.xyz
 - name: 🇩🇪 德国 (Germany) 49 - xiaoliue
   type: vless
-  server: 185.113.223.183
+  server: 31.58.76.68
   port: 8443
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
@@ -646,151 +630,12 @@ proxies:
   servername: cdn8848.776676.xyz
   network: ws
   ws-opts:
-    path: /channels/act
+    path: '%2Fnew%2Fdh%3Fed%3D2560'
     headers:
       Host: cdn8848.776676.xyz
 - name: 🇩🇪 德国 (Germany) 50 - xiaoliue
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 51 - xiaoliue
   type: vless
-  server: 89.110.66.154
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇩🇪 德国 (Germany) 52 - xiaoliue
-  type: vless
-  server: 176.124.220.173
-  port: 8443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇩🇪 德国 (Germany) 53 - xiaoliue
-  type: vless
-  server: 2.26.125.38
-  port: 2096
-  uuid: 0a2dde28-70da-4863-a06f-35d007d94d35
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: st3f6d.rumedia-cdn.com
-  network: ws
-  ws-opts:
-    path: /cdn/v3/live
-    headers:
-      Host: st3f6d.rumedia-cdn.com
-- name: 🇩🇪 德国 (Germany) 54 - xiaoliue
-  type: vless
-  server: 147.90.89.173
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇩🇪 德国 (Germany) 55 - xiaoliue
-  type: vless
-  server: 157.173.125.214
-  port: 2087
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: '%2Fredirect%2Fchina%2Fview%3Fed%3D2560'
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇩🇪 德国 (Germany) 56 - xiaoliue
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 57 - xiaoliue
-  type: vless
-  server: 104.21.19.69
-  port: 2053
-  uuid: 522df6b1-a110-4163-a92f-9935561b1f77
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: de.huge-b.com
-  network: ws
-  ws-opts:
-    path: /@Artemis_Vpn
-    headers:
-      Host: de.huge-b.com
-- name: 🇩🇪 德国 (Germany) 58 - xiaoliue
-  type: ss
-  server: 130.61.226.114
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: wJJYYALkxTj4TAIgQiiuM0WLYLKjCe9UMc9BIN3peYg=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 59 - xiaoliue
-  type: vless
-  server: 164.92.137.46
-  port: 2083
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: '%2Fbt%2Fstreaming%2Fad%3Fed%3D2560'
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇩🇪 德国 (Germany) 60 - xiaoliue
-  type: vless
-  server: 2.27.244.164
-  port: 8443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /channels/act
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇩🇪 德国 (Germany) 61 - xiaoliue
-  type: vless
-  server: 103.31.77.108
+  server: 31.59.121.156
   port: 2053
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
@@ -799,21 +644,7 @@ proxies:
   servername: cdn8848.776676.xyz
   network: ws
   ws-opts:
-    path: /channels/act
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇩🇪 德国 (Germany) 62 - xiaoliue
-  type: vless
-  server: 164.92.137.46
-  port: 2083
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: '%2Fbt%2Fstreaming%2Fad%3Fed%3D2560'
+    path: /
     headers:
       Host: cdn8848.776676.xyz
 proxy-groups:
@@ -871,18 +702,6 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 48 - xiaoliue
   - 🇩🇪 德国 (Germany) 49 - xiaoliue
   - 🇩🇪 德国 (Germany) 50 - xiaoliue
-  - 🇩🇪 德国 (Germany) 51 - xiaoliue
-  - 🇩🇪 德国 (Germany) 52 - xiaoliue
-  - 🇩🇪 德国 (Germany) 53 - xiaoliue
-  - 🇩🇪 德国 (Germany) 54 - xiaoliue
-  - 🇩🇪 德国 (Germany) 55 - xiaoliue
-  - 🇩🇪 德国 (Germany) 56 - xiaoliue
-  - 🇩🇪 德国 (Germany) 57 - xiaoliue
-  - 🇩🇪 德国 (Germany) 58 - xiaoliue
-  - 🇩🇪 德国 (Germany) 59 - xiaoliue
-  - 🇩🇪 德国 (Germany) 60 - xiaoliue
-  - 🇩🇪 德国 (Germany) 61 - xiaoliue
-  - 🇩🇪 德国 (Germany) 62 - xiaoliue
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -938,17 +757,5 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 48 - xiaoliue
   - 🇩🇪 德国 (Germany) 49 - xiaoliue
   - 🇩🇪 德国 (Germany) 50 - xiaoliue
-  - 🇩🇪 德国 (Germany) 51 - xiaoliue
-  - 🇩🇪 德国 (Germany) 52 - xiaoliue
-  - 🇩🇪 德国 (Germany) 53 - xiaoliue
-  - 🇩🇪 德国 (Germany) 54 - xiaoliue
-  - 🇩🇪 德国 (Germany) 55 - xiaoliue
-  - 🇩🇪 德国 (Germany) 56 - xiaoliue
-  - 🇩🇪 德国 (Germany) 57 - xiaoliue
-  - 🇩🇪 德国 (Germany) 58 - xiaoliue
-  - 🇩🇪 德国 (Germany) 59 - xiaoliue
-  - 🇩🇪 德国 (Germany) 60 - xiaoliue
-  - 🇩🇪 德国 (Germany) 61 - xiaoliue
-  - 🇩🇪 德国 (Germany) 62 - xiaoliue
 rules:
 - MATCH,PROXIES

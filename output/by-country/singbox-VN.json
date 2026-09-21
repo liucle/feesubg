@@ -6,14 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇿 BZ 01 - xiaoliue"
+        "🇻🇳 VN 01 - xiaoliue",
+        "🇻🇳 VN 02 - xiaoliue",
+        "🇻🇳 VN 03 - xiaoliue"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇿 BZ 01 - xiaoliue"
+        "🇻🇳 VN 01 - xiaoliue",
+        "🇻🇳 VN 02 - xiaoliue",
+        "🇻🇳 VN 03 - xiaoliue"
       ],
       "url": "https://www.google.com/generate_204"
     },

@@ -6,14 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇶 IQ 01 - xiaoliue"
+        "🇨🇭 CH 01 - xiaoliue",
+        "🇨🇭 CH 02 - xiaoliue"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇶 IQ 01 - xiaoliue"
+        "🇨🇭 CH 01 - xiaoliue",
+        "🇨🇭 CH 02 - xiaoliue"
       ],
       "url": "https://www.google.com/generate_204"
     },

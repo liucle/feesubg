@@ -6,29 +6,75 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaoliue
   type: vless
-  server: 144.31.218.10
+  server: 172.67.187.219
+  port: 8880
+  uuid: d6c595c9-bff4-4510-893a-dfa3c87fa0cd
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: lucky-cell-d20c.78-107.workers.dev
+- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaoliue
+  type: vless
+  server: 104.21.79.199
   port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  uuid: 38d6b629-64c2-4c31-a10d-26eb3a2a053d
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: cdn8848.776676.xyz
+  servername: lHNs3ww2-CXQ-Gj1vvOBkEPIg4noPkc.hqu4v38Hi9iFtcp6mZfMX-3bmx.WoRKeRS.dEV
   network: ws
   ws-opts:
-    path: /archives/play/pages?ed=2560
+    path: /vl/cxl8Wn1ylnsk63nJ0
     headers:
-      Host: cdn8848.776676.xyz
+      Host: lhns3ww2-cxq-gj1vvobkepig4nopkc.hqu4v38hi9iftcp6mzfmx-3bmx.workers.dev
+- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaoliue
+  type: vless
+  server: 46.8.200.91
+  port: 443
+  uuid: b8201bab-fa6c-4f6e-b289-b5da660c6f69
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cf3.rumedia-cdn.com
+  network: ws
+  ws-opts:
+    path: /cdn/v3/live
+    headers:
+      Host: cf3.rumedia-cdn.com
+- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaoliue
+  type: vless
+  server: 162.159.24.131
+  port: 2086
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - xiaoliue
+  - 🇷🇺 俄罗斯 (Russia) 02 - xiaoliue
+  - 🇷🇺 俄罗斯 (Russia) 03 - xiaoliue
+  - 🇷🇺 俄罗斯 (Russia) 04 - xiaoliue
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - xiaoliue
+  - 🇷🇺 俄罗斯 (Russia) 02 - xiaoliue
+  - 🇷🇺 俄罗斯 (Russia) 03 - xiaoliue
+  - 🇷🇺 俄罗斯 (Russia) 04 - xiaoliue
 rules:
 - MATCH,PROXIES

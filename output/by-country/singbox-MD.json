@@ -6,16 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇩🇰 DK 01 - xiaoliue",
-        "🇩🇰 DK 02 - xiaoliue"
+        "🇲🇩 MD 01 - xiaoliue"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇩🇰 DK 01 - xiaoliue",
-        "🇩🇰 DK 02 - xiaoliue"
+        "🇲🇩 MD 01 - xiaoliue"
       ],
       "url": "https://www.google.com/generate_204"
     },

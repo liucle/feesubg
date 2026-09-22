@@ -55,31 +55,17 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇰🇷 韩国 (South Korea) 05 - xiaoliue
-  type: ss
-  server: 141.164.45.187
-  port: 8091
-  cipher: aes-256-gcm
-  password: PCnnH6SQSnfoS27
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 06 - xiaoliue
   type: vless
-  server: 151.245.106.49
-  port: 2053
-  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
+  server: 34.64.149.137
+  port: 443
+  uuid: 700a7a0e-3f27-406c-81d1-aa1abe411af8
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
+    public-key: kqIDhDhYFrXD-1GeurwjzFwbB0zWipgWmcbADXwmyy8
   servername: www.cloudflare.com
   client-fingerprint: random
-- name: 🇰🇷 韩国 (South Korea) 07 - xiaoliue
-  type: ss
-  server: 141.164.45.187
-  port: 5498
-  cipher: aes-256-gcm
-  password: lGqs95QkFHo2NV
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -90,8 +76,6 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 03 - xiaoliue
   - 🇰🇷 韩国 (South Korea) 04 - xiaoliue
   - 🇰🇷 韩国 (South Korea) 05 - xiaoliue
-  - 🇰🇷 韩国 (South Korea) 06 - xiaoliue
-  - 🇰🇷 韩国 (South Korea) 07 - xiaoliue
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -102,7 +86,5 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 03 - xiaoliue
   - 🇰🇷 韩国 (South Korea) 04 - xiaoliue
   - 🇰🇷 韩国 (South Korea) 05 - xiaoliue
-  - 🇰🇷 韩国 (South Korea) 06 - xiaoliue
-  - 🇰🇷 韩国 (South Korea) 07 - xiaoliue
 rules:
 - MATCH,PROXIES

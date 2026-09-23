@@ -6,20 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇾 CY 01 - xiaoliue",
-        "🇨🇾 CY 02 - xiaoliue",
-        "🇨🇾 CY 03 - xiaoliue",
-        "🇨🇾 CY 04 - xiaoliue"
+        "🇵🇱 PL 01 - xiaoliue"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇾 CY 01 - xiaoliue",
-        "🇨🇾 CY 02 - xiaoliue",
-        "🇨🇾 CY 03 - xiaoliue",
-        "🇨🇾 CY 04 - xiaoliue"
+        "🇵🇱 PL 01 - xiaoliue"
       ],
       "url": "https://www.google.com/generate_204"
     },

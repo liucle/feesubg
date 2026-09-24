@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇨🇾 CY 01 - xiaoliue",
+        "🇨🇾 CY 02 - xiaoliue",
+        "🇨🇾 CY 03 - xiaoliue",
+        "🇨🇾 CY 04 - xiaoliue",
+        "🇨🇾 CY 05 - xiaoliue",
+        "🇨🇾 CY 06 - xiaoliue"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇨🇾 CY 01 - xiaoliue",
+        "🇨🇾 CY 02 - xiaoliue",
+        "🇨🇾 CY 03 - xiaoliue",
+        "🇨🇾 CY 04 - xiaoliue",
+        "🇨🇾 CY 05 - xiaoliue",
+        "🇨🇾 CY 06 - xiaoliue"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

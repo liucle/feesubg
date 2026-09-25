@@ -18,20 +18,7 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: ty986gfazs.cainiaohub.xyz
-- name: 🇺🇸 美国 (United States) 02 (家宽) - xiaoliue
-  type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaoliue
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaoliue
   type: vless
   server: 118.167.230.191
   port: 24215
@@ -43,36 +30,28 @@ proxies:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
   client-fingerprint: edge
-- name: 🇨🇦 加拿大 (Canada) 04 (家宽) - xiaoliue
-  type: vless
-  server: 188.114.97.6
-  port: 2086
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaoliue
+  type: ss
+  server: 36.224.141.124
+  port: 50099
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaoliue
-  - 🇺🇸 美国 (United States) 02 (家宽) - xiaoliue
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaoliue
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaoliue
-  - 🇨🇦 加拿大 (Canada) 04 (家宽) - xiaoliue
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaoliue
-  - 🇺🇸 美国 (United States) 02 (家宽) - xiaoliue
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaoliue
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaoliue
-  - 🇨🇦 加拿大 (Canada) 04 (家宽) - xiaoliue
 rules:
 - MATCH,PROXIES

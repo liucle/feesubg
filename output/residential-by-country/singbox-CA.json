@@ -6,14 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇾 MY 01 - xiaoliue"
+        "🇨🇦 加拿大 (Canada) 01 (家宽) - xiaoliue"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇾 MY 01 - xiaoliue"
+        "🇨🇦 加拿大 (Canada) 01 (家宽) - xiaoliue"
       ],
       "url": "https://www.google.com/generate_204"
     },

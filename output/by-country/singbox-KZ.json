@@ -6,18 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇪 阿联酋 (UAE) 01 - xiaoliue",
-        "🇦🇪 阿联酋 (UAE) 02 - xiaoliue",
-        "🇦🇪 阿联酋 (UAE) 03 - xiaoliue"
+        "🇰🇿 KZ 01 - xiaoliue",
+        "🇰🇿 KZ 02 - xiaoliue"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇪 阿联酋 (UAE) 01 - xiaoliue",
-        "🇦🇪 阿联酋 (UAE) 02 - xiaoliue",
-        "🇦🇪 阿联酋 (UAE) 03 - xiaoliue"
+        "🇰🇿 KZ 01 - xiaoliue",
+        "🇰🇿 KZ 02 - xiaoliue"
       ],
       "url": "https://www.google.com/generate_204"
     },

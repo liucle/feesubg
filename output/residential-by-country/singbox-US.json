@@ -6,14 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 (United States) 01 (家宽) - xiaoliue"
+        "🇺🇸 美国 (United States) 01 (家宽) - xiaoliue",
+        "🇺🇸 美国 (United States) 02 (家宽) - xiaoliue"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 美国 (United States) 01 (家宽) - xiaoliue"
+        "🇺🇸 美国 (United States) 01 (家宽) - xiaoliue",
+        "🇺🇸 美国 (United States) 02 (家宽) - xiaoliue"
       ],
       "url": "https://www.google.com/generate_204"
     },

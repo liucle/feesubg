@@ -4,31 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇺 HU 01 - xiaoliue
+- name: 🇨🇱 CL 01 - xiaoliue
   type: vless
-  server: 37.221.210.113
+  server: 34.176.187.219
   port: 443
-  uuid: 0250424c-ae75-4b6b-890f-3fe26fae36c3
+  uuid: ad5325f8-f0b3-41c4-a561-113529b60e70
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: hk.152568.xyz
-  network: ws
-  ws-opts:
-    path: /cdn/packages/runtime-core.tar.gz
-    headers:
-      Host: hk.152568.xyz
+  reality-opts:
+    public-key: HnHVuSObMrldWGzq1-Eb93fwgu6QQRp6H0_8LX3ikDc
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇭🇺 HU 01 - xiaoliue
+  - 🇨🇱 CL 01 - xiaoliue
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇺 HU 01 - xiaoliue
+  - 🇨🇱 CL 01 - xiaoliue
 rules:
 - MATCH,PROXIES

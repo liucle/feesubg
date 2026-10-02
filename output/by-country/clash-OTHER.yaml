@@ -6,20 +6,21 @@ log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - xiaoliue
   type: vless
-  server: 162.159.48.32
-  port: 2082
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  server: geo.shkola112.site
+  port: 443
+  uuid: 76ac91c5-ea82-4046-8ee7-2ffbb563ac94
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: geo.shkola112.site
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls
+    path: /api-vless
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      Host: geo.shkola112.site
 - name: 🌐 其他地区 (Other) 02 - xiaoliue
   type: vless
-  server: 172.64.32.103
+  server: 162.159.48.32
   port: 2082
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
@@ -32,8 +33,34 @@ proxies:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🌐 其他地区 (Other) 03 - xiaoliue
   type: vless
-  server: 172.64.158.146
-  port: 2052
+  server: 172.64.52.6
+  port: 8080
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🌐 其他地区 (Other) 04 - xiaoliue
+  type: vless
+  server: 172.64.229.170
+  port: 2082
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🌐 其他地区 (Other) 05 - xiaoliue
+  type: vless
+  server: 162.159.38.127
+  port: 2086
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
@@ -43,7 +70,46 @@ proxies:
     path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🌐 其他地区 (Other) 04 - xiaoliue
+- name: 🌐 其他地区 (Other) 06 - xiaoliue
+  type: vless
+  server: 172.64.229.170
+  port: 8080
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🌐 其他地区 (Other) 07 - xiaoliue
+  type: vless
+  server: 172.64.229.170
+  port: 8880
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🌐 其他地区 (Other) 08 - xiaoliue
+  type: vless
+  server: 104.18.34.14
+  port: 8880
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🌐 其他地区 (Other) 09 - xiaoliue
   type: vless
   server: 104.19.33.237
   port: 443
@@ -57,248 +123,6 @@ proxies:
     path: /ws
     headers:
       Host: a.cwvps.eu.org
-- name: 🌐 其他地区 (Other) 05 - xiaoliue
-  type: vless
-  server: 172.64.158.146
-  port: 2052
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🌐 其他地区 (Other) 06 - xiaoliue
-  type: vless
-  server: 104.18.47.113
-  port: 80
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🌐 其他地区 (Other) 07 - xiaoliue
-  type: vless
-  server: 172.64.158.146
-  port: 2052
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🌐 其他地区 (Other) 08 - xiaoliue
-  type: vless
-  server: 162.159.39.218
-  port: 80
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🌐 其他地区 (Other) 09 - xiaoliue
-  type: vless
-  server: 172.67.185.98
-  port: 2053
-  uuid: 9d672694-c146-422e-b3b5-3717a38a0fcc
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fr.api-music-fa.com
-  network: ws
-  ws-opts:
-    path: /api/voip/updates/static/fr2035
-    headers:
-      Host: fr.api-music-fa.com
-- name: 🌐 其他地区 (Other) 10 - xiaoliue
-  type: vless
-  server: 104.18.1.1
-  port: 2083
-  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: vlsovip.1d.mom
-  network: ws
-  ws-opts:
-    path: /socks5=888:888@hkip.1d.mom:1080fp=ios
-    headers:
-      Host: vlsovip.1d.mom
-- name: 🌐 其他地区 (Other) 11 - xiaoliue
-  type: vless
-  server: 104.18.35.86
-  port: 8080
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /sg-melbi
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: 🌐 其他地区 (Other) 12 - xiaoliue
-  type: vless
-  server: 162.159.39.218
-  port: 2095
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🌐 其他地区 (Other) 13 - xiaoliue
-  type: vless
-  server: 162.159.39.218
-  port: 8080
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tlssecurity=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🌐 其他地区 (Other) 14 - xiaoliue
-  type: vless
-  server: 172.64.52.6
-  port: 2052
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🌐 其他地区 (Other) 15 - xiaoliue
-  type: vless
-  server: 162.159.45.19
-  port: 80
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🌐 其他地区 (Other) 16 - xiaoliue
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: a.cwvps.eu.org
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: a.cwvps.eu.org
-- name: 🌐 其他地区 (Other) 17 - xiaoliue
-  type: vless
-  server: 172.67.217.240
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 18 - xiaoliue
-  type: vless
-  server: 172.67.217.240
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 19 - xiaoliue
-  type: vless
-  server: 104.21.84.30
-  port: 2053
-  uuid: 9d672694-c146-422e-b3b5-3717a38a0fcc
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fr.api-music-fa.com
-  network: ws
-  ws-opts:
-    path: /api/voip/updates/static/fr2035
-    headers:
-      Host: fr.api-music-fa.com
-- name: 🌐 其他地区 (Other) 20 - xiaoliue
-  type: vless
-  server: 104.27.52.69
-  port: 443
-  uuid: 73796e63-0000-4000-8000-000000000000
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: icy-pine-5efc.aoigjojowfie123.workers.dev
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: icy-pine-5efc.aoigjojowfie123.workers.dev
-- name: 🌐 其他地区 (Other) 21 - xiaoliue
-  type: vless
-  server: 104.16.10.2
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 22 - xiaoliue
-  type: vless
-  server: 162.159.39.218
-  port: 8080
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls+
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 proxy-groups:
 - name: PROXIES
   type: select
@@ -313,19 +137,6 @@ proxy-groups:
   - 🌐 其他地区 (Other) 07 - xiaoliue
   - 🌐 其他地区 (Other) 08 - xiaoliue
   - 🌐 其他地区 (Other) 09 - xiaoliue
-  - 🌐 其他地区 (Other) 10 - xiaoliue
-  - 🌐 其他地区 (Other) 11 - xiaoliue
-  - 🌐 其他地区 (Other) 12 - xiaoliue
-  - 🌐 其他地区 (Other) 13 - xiaoliue
-  - 🌐 其他地区 (Other) 14 - xiaoliue
-  - 🌐 其他地区 (Other) 15 - xiaoliue
-  - 🌐 其他地区 (Other) 16 - xiaoliue
-  - 🌐 其他地区 (Other) 17 - xiaoliue
-  - 🌐 其他地区 (Other) 18 - xiaoliue
-  - 🌐 其他地区 (Other) 19 - xiaoliue
-  - 🌐 其他地区 (Other) 20 - xiaoliue
-  - 🌐 其他地区 (Other) 21 - xiaoliue
-  - 🌐 其他地区 (Other) 22 - xiaoliue
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -340,18 +151,5 @@ proxy-groups:
   - 🌐 其他地区 (Other) 07 - xiaoliue
   - 🌐 其他地区 (Other) 08 - xiaoliue
   - 🌐 其他地区 (Other) 09 - xiaoliue
-  - 🌐 其他地区 (Other) 10 - xiaoliue
-  - 🌐 其他地区 (Other) 11 - xiaoliue
-  - 🌐 其他地区 (Other) 12 - xiaoliue
-  - 🌐 其他地区 (Other) 13 - xiaoliue
-  - 🌐 其他地区 (Other) 14 - xiaoliue
-  - 🌐 其他地区 (Other) 15 - xiaoliue
-  - 🌐 其他地区 (Other) 16 - xiaoliue
-  - 🌐 其他地区 (Other) 17 - xiaoliue
-  - 🌐 其他地区 (Other) 18 - xiaoliue
-  - 🌐 其他地区 (Other) 19 - xiaoliue
-  - 🌐 其他地区 (Other) 20 - xiaoliue
-  - 🌐 其他地区 (Other) 21 - xiaoliue
-  - 🌐 其他地区 (Other) 22 - xiaoliue
 rules:
 - MATCH,PROXIES

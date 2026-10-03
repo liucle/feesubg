@@ -6,21 +6,7 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaoliue
   type: vless
-  server: 63.141.128.22
-  port: 443
-  uuid: b8b01773-36b1-4b49-9bd0-6249f52345b4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: MiSty-tooth-78cA.FoboGAH414-e7B.WoRKERs.DEv
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiTkNUaFg0ZnJNUjhhcyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
-    headers:
-      Host: MiSty-tooth-78cA.FoboGAH414-e7B.WoRKERs.DEv
-- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaoliue
-  type: vless
-  server: 81.94.148.214
+  server: 78.159.246.110
   port: 443
   uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
   udp: true
@@ -32,9 +18,16 @@ proxies:
     path: /ws
     headers:
       Host: fbsv6.guardora.pro
+- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaoliue
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: mhXYDvaSfHzHZXBswC/zo/o8VqdU3XSBpwWx050Y6MU=
+  udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 03 - xiaoliue
   type: vless
-  server: 78.159.246.110
+  server: 217.19.122.200
   port: 443
   uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
   udp: true
@@ -48,32 +41,16 @@ proxies:
       Host: fbsv6.guardora.pro
 - name: 🇷🇺 俄罗斯 (Russia) 04 - xiaoliue
   type: vless
-  server: fbsv6.guardora.pro
+  server: 62.152.58.90
   port: 443
-  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
+  uuid: 1bb2af63-4472-44ed-9c70-8f316258b68b
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: fbsv6.guardora.pro
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: fbsv6.guardora.pro
-- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaoliue
-  type: vless
-  server: 46.243.232.125
-  port: 443
-  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fbsv6.guardora.pro
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: fbsv6.guardora.pro
+  reality-opts:
+    public-key: JBKJlzuJH1YzDHAoz28wEKbzWTGpDpKjgtSq0oT0a0k
+  servername: 360.yandex.ru
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -83,7 +60,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - xiaoliue
   - 🇷🇺 俄罗斯 (Russia) 03 - xiaoliue
   - 🇷🇺 俄罗斯 (Russia) 04 - xiaoliue
-  - 🇷🇺 俄罗斯 (Russia) 05 - xiaoliue
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -93,6 +69,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - xiaoliue
   - 🇷🇺 俄罗斯 (Russia) 03 - xiaoliue
   - 🇷🇺 俄罗斯 (Russia) 04 - xiaoliue
-  - 🇷🇺 俄罗斯 (Russia) 05 - xiaoliue
 rules:
 - MATCH,PROXIES

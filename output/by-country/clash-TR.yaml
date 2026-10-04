@@ -4,31 +4,25 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇬🇪 GE 01 - xiaoliue
+- name: 🇹🇷 土耳其 (Turkey) 01 - xiaoliue
   type: vless
-  server: 104.21.50.89
-  port: 443
-  uuid: 76ac91c5-ea82-4046-8ee7-2ffbb563ac94
+  server: test.keoplentuio.xyz
+  port: 2053
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: geo.shkola112.site
-  network: ws
-  ws-opts:
-    path: /api-vless
-    headers:
-      Host: geo.shkola112.site
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇬🇪 GE 01 - xiaoliue
+  - 🇹🇷 土耳其 (Turkey) 01 - xiaoliue
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇪 GE 01 - xiaoliue
+  - 🇹🇷 土耳其 (Turkey) 01 - xiaoliue
 rules:
 - MATCH,PROXIES

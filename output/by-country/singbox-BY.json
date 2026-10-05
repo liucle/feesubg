@@ -6,14 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇴 RO 01 - xiaoliue"
+        "🇧🇾 BY 01 - xiaoliue",
+        "🇧🇾 BY 02 - xiaoliue",
+        "🇧🇾 BY 03 - xiaoliue"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇴 RO 01 - xiaoliue"
+        "🇧🇾 BY 01 - xiaoliue",
+        "🇧🇾 BY 02 - xiaoliue",
+        "🇧🇾 BY 03 - xiaoliue"
       ],
       "url": "https://www.google.com/generate_204"
     },

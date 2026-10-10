@@ -12,6 +12,13 @@ proxies:
   password: YF329KNGVTUZ1qrH
   udp: true
 - name: 🇮🇪 IE 02 - xiaoliue
+  type: ss
+  server: 20.123.1.55
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: YF329KNGVTUZ1qrH
+  udp: true
+- name: 🇮🇪 IE 03 - xiaoliue
   type: vless
   server: 23.95.225.10
   port: 8443
@@ -25,7 +32,7 @@ proxies:
     path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
-- name: 🇮🇪 IE 03 - xiaoliue
+- name: 🇮🇪 IE 04 - xiaoliue
   type: ss
   server: 20.123.1.55
   port: 443
@@ -40,6 +47,7 @@ proxy-groups:
   - 🇮🇪 IE 01 - xiaoliue
   - 🇮🇪 IE 02 - xiaoliue
   - 🇮🇪 IE 03 - xiaoliue
+  - 🇮🇪 IE 04 - xiaoliue
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -48,5 +56,6 @@ proxy-groups:
   - 🇮🇪 IE 01 - xiaoliue
   - 🇮🇪 IE 02 - xiaoliue
   - 🇮🇪 IE 03 - xiaoliue
+  - 🇮🇪 IE 04 - xiaoliue
 rules:
 - MATCH,PROXIES

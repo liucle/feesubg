@@ -18,7 +18,20 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: 60.248.219.78
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaoliue
+- name: 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaoliue
+  type: vless
+  server: 172.64.88.251
+  port: 8880
+  uuid: 87a5d3eb-afd4-4193-9787-c54ef7c26c8c
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: patient-cake-39c7.44-e7a.workers.dev
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaoliue
   type: vless
   server: 61.230.162.88
   port: 24215
@@ -30,7 +43,7 @@ proxies:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
   client-fingerprint: safari
-- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaoliue
+- name: 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaoliue
   type: vless
   server: 103.180.20.108
   port: 8443
@@ -44,7 +57,7 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: 103.180.20.108
-- name: 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaoliue
+- name: 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - xiaoliue
   type: vless
   server: 61.18.134.10
   port: 443
@@ -64,17 +77,19 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaoliue
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaoliue
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaoliue
+  - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaoliue
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaoliue
   - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaoliue
+  - 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - xiaoliue
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaoliue
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaoliue
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaoliue
+  - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaoliue
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaoliue
   - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaoliue
+  - 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - xiaoliue
 rules:
 - MATCH,PROXIES

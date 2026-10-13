@@ -5,19 +5,68 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇭 CH 01 - xiaoliue
-  type: ss
-  server: 132.243.175.144
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
+  type: vless
+  server: 129.153.71.28
+  port: 28863
+  uuid: 3e956106-7f92-4cbf-bf77-715d3890fa84
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
 - name: 🇨🇭 CH 02 - xiaoliue
+  type: vless
+  server: 38.47.96.220
+  port: 11424
+  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: notls.lukongtou.eu.org
+  network: ws
+  ws-opts:
+    path: Telegram-WangCai2🇨🇳
+    headers:
+      Host: notls.lukongtou.eu.org
+- name: 🇨🇭 CH 03 - xiaoliue
+  type: vless
+  server: 185.18.250.245
+  port: 443
+  uuid: f77299ea-e13d-417d-8cdc-ce5566dfc94b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edu.ruangguru.com.r3xxe.eu.cc
+  network: ws
+  ws-opts:
+    path: /nl-tw
+    headers:
+      Host: edu.ruangguru.com.r3xxe.eu.cc
+- name: 🇨🇭 CH 04 - xiaoliue
   type: ss
   server: 132.243.175.144
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
   udp: true
+- name: 🇨🇭 CH 05 - xiaoliue
+  type: vless
+  server: 188.34.142.174
+  port: 444
+  uuid: da46ec1f-84ad-4470-866f-010b58357b19
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -25,6 +74,9 @@ proxy-groups:
   - AUTO
   - 🇨🇭 CH 01 - xiaoliue
   - 🇨🇭 CH 02 - xiaoliue
+  - 🇨🇭 CH 03 - xiaoliue
+  - 🇨🇭 CH 04 - xiaoliue
+  - 🇨🇭 CH 05 - xiaoliue
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -32,5 +84,8 @@ proxy-groups:
   proxies:
   - 🇨🇭 CH 01 - xiaoliue
   - 🇨🇭 CH 02 - xiaoliue
+  - 🇨🇭 CH 03 - xiaoliue
+  - 🇨🇭 CH 04 - xiaoliue
+  - 🇨🇭 CH 05 - xiaoliue
 rules:
 - MATCH,PROXIES

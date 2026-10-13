@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇻🇳 VN 01 - xiaoliue
+- name: 🇺🇦 UA 01 - xiaoliue
   type: vless
-  server: 103.161.178.72
+  server: 213.111.148.137
   port: 443
-  uuid: 81eed05f-e2d0-4944-9e48-caeb8d036557
+  uuid: 40af9131-d540-448a-bc56-5bba147a1dc3
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: us-lax.862400.xyz
+  servername: proxy-1cu.pages.dev
   network: ws
   ws-opts:
-    path: /announcement?ed=2048fp=random
+    path: /fp=android
     headers:
-      Host: us-lax.862400.xyz
+      Host: proxy-1cu.pages.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇻🇳 VN 01 - xiaoliue
+  - 🇺🇦 UA 01 - xiaoliue
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇻🇳 VN 01 - xiaoliue
+  - 🇺🇦 UA 01 - xiaoliue
 rules:
 - MATCH,PROXIES

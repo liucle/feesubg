@@ -54,6 +54,14 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇸🇨 SC 06 - xiaoliue
+  type: vless
+  server: 45.137.43.168
+  port: 10443
+  uuid: b4cc503a-c352-4775-85ad-fc982086884a
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -64,6 +72,7 @@ proxy-groups:
   - 🇸🇨 SC 03 - xiaoliue
   - 🇸🇨 SC 04 - xiaoliue
   - 🇸🇨 SC 05 - xiaoliue
+  - 🇸🇨 SC 06 - xiaoliue
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -74,5 +83,6 @@ proxy-groups:
   - 🇸🇨 SC 03 - xiaoliue
   - 🇸🇨 SC 04 - xiaoliue
   - 🇸🇨 SC 05 - xiaoliue
+  - 🇸🇨 SC 06 - xiaoliue
 rules:
 - MATCH,PROXIES

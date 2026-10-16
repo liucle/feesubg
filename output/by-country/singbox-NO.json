@@ -6,14 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇷 韩国 (South Korea) 01 (家宽) - xiaoliue"
+        "🇳🇴 NO 01 - xiaoliue",
+        "🇳🇴 NO 02 - xiaoliue"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇷 韩国 (South Korea) 01 (家宽) - xiaoliue"
+        "🇳🇴 NO 01 - xiaoliue",
+        "🇳🇴 NO 02 - xiaoliue"
       ],
       "url": "https://www.google.com/generate_204"
     },

@@ -6,35 +6,6 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - xiaoliue
   type: vless
-  server: 2.26.225.89
-  port: 8443
-  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: pl.flen-vpn.xyz
-- name: 🇵🇱 PL 02 - xiaoliue
-  type: vless
-  server: 38.244.186.167
-  port: 8445
-  uuid: f3b8d5f8-cbe9-4aca-ab34-005c51262d5e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: -s2SHiKfXMJRYizNuu8URrx6MgyoQtBJ0QAj33qMog0
-  servername: www.samsung.com
-  client-fingerprint: chrome
-- name: 🇵🇱 PL 03 - xiaoliue
-  type: vless
-  server: test.keoplentuio.xyz
-  port: 2053
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇵🇱 PL 04 - xiaoliue
-  type: vless
   server: 38.244.186.167
   port: 8445
   uuid: f3b8d5f8-cbe9-4aca-ab34-005c51262d5e
@@ -45,56 +16,17 @@ proxies:
     public-key: -s2SHiKfXMJRYizNuu8URrx6MgyoQtBJ0QAj33qMog0
   servername: www.samsung.com
   client-fingerprint: firefox
-- name: 🇵🇱 PL 05 - xiaoliue
-  type: vless
-  server: 2.26.225.89
-  port: 8443
-  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: pl.flen-vpn.xyz
-- name: 🇵🇱 PL 06 - xiaoliue
-  type: vless
-  server: 2.26.225.89
-  port: 8443
-  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: pl.flen-vpn.xyz
-- name: 🇵🇱 PL 07 - xiaoliue
-  type: vless
-  server: 2.26.225.89
-  port: 8443
-  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: pl.flen-vpn.xyz
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇵🇱 PL 01 - xiaoliue
-  - 🇵🇱 PL 02 - xiaoliue
-  - 🇵🇱 PL 03 - xiaoliue
-  - 🇵🇱 PL 04 - xiaoliue
-  - 🇵🇱 PL 05 - xiaoliue
-  - 🇵🇱 PL 06 - xiaoliue
-  - 🇵🇱 PL 07 - xiaoliue
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇵🇱 PL 01 - xiaoliue
-  - 🇵🇱 PL 02 - xiaoliue
-  - 🇵🇱 PL 03 - xiaoliue
-  - 🇵🇱 PL 04 - xiaoliue
-  - 🇵🇱 PL 05 - xiaoliue
-  - 🇵🇱 PL 06 - xiaoliue
-  - 🇵🇱 PL 07 - xiaoliue
 rules:
 - MATCH,PROXIES

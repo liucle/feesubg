@@ -46,11 +46,16 @@ proxies:
 - name: 🇨🇾 CY 04 - xiaoliue
   type: vless
   server: 5.253.29.254
-  port: 10443
+  port: 14430
   uuid: c7c27192-60a5-4ce1-b613-95270d82309d
   udp: true
   tls: false
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.253.29.254
 - name: 🇨🇾 CY 05 - xiaoliue
   type: vless
   server: 5.253.29.254
@@ -60,6 +65,14 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇨🇾 CY 06 - xiaoliue
+  type: vless
+  server: 5.253.29.254
+  port: 10443
+  uuid: c7c27192-60a5-4ce1-b613-95270d82309d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇾 CY 07 - xiaoliue
   type: vless
   server: 5.253.29.254
   port: 10443
@@ -78,6 +91,7 @@ proxy-groups:
   - 🇨🇾 CY 04 - xiaoliue
   - 🇨🇾 CY 05 - xiaoliue
   - 🇨🇾 CY 06 - xiaoliue
+  - 🇨🇾 CY 07 - xiaoliue
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -89,5 +103,6 @@ proxy-groups:
   - 🇨🇾 CY 04 - xiaoliue
   - 🇨🇾 CY 05 - xiaoliue
   - 🇨🇾 CY 06 - xiaoliue
+  - 🇨🇾 CY 07 - xiaoliue
 rules:
 - MATCH,PROXIES

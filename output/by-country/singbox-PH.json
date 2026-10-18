@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇵🇭 PH 01 - xiaoliue",
+        "🇵🇭 PH 02 - xiaoliue",
+        "🇵🇭 PH 03 - xiaoliue",
+        "🇵🇭 PH 04 - xiaoliue",
+        "🇵🇭 PH 05 - xiaoliue",
+        "🇵🇭 PH 06 - xiaoliue",
+        "🇵🇭 PH 07 - xiaoliue",
+        "🇵🇭 PH 08 - xiaoliue",
+        "🇵🇭 PH 09 - xiaoliue",
+        "🇵🇭 PH 10 - xiaoliue",
+        "🇵🇭 PH 11 - xiaoliue"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇵🇭 PH 01 - xiaoliue",
+        "🇵🇭 PH 02 - xiaoliue",
+        "🇵🇭 PH 03 - xiaoliue",
+        "🇵🇭 PH 04 - xiaoliue",
+        "🇵🇭 PH 05 - xiaoliue",
+        "🇵🇭 PH 06 - xiaoliue",
+        "🇵🇭 PH 07 - xiaoliue",
+        "🇵🇭 PH 08 - xiaoliue",
+        "🇵🇭 PH 09 - xiaoliue",
+        "🇵🇭 PH 10 - xiaoliue",
+        "🇵🇭 PH 11 - xiaoliue"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

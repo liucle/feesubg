@@ -15,7 +15,7 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /fp=chromefp=chrome
+    path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
 - name: 🇹🇷 土耳其 (Turkey) 02 - xiaoliue
@@ -29,7 +29,7 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /fp=chromefp=chrome
     headers:
       Host: ccc.010304.xyz
 - name: 🇹🇷 土耳其 (Turkey) 03 - xiaoliue
@@ -42,13 +42,21 @@ proxies:
   skip-cert-verify: true
 - name: 🇹🇷 土耳其 (Turkey) 04 - xiaoliue
   type: vless
-  server: test.keoplentuio.xyz
+  server: vpn.networkforexir.site
   port: 2053
   uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
   udp: true
   tls: false
   skip-cert-verify: true
 - name: 🇹🇷 土耳其 (Turkey) 05 - xiaoliue
+  type: vless
+  server: test.keoplentuio.xyz
+  port: 2053
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇹🇷 土耳其 (Turkey) 06 - xiaoliue
   type: vless
   server: test.keoplentuio.xyz
   port: 2053
@@ -66,6 +74,7 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 03 - xiaoliue
   - 🇹🇷 土耳其 (Turkey) 04 - xiaoliue
   - 🇹🇷 土耳其 (Turkey) 05 - xiaoliue
+  - 🇹🇷 土耳其 (Turkey) 06 - xiaoliue
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -76,5 +85,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 03 - xiaoliue
   - 🇹🇷 土耳其 (Turkey) 04 - xiaoliue
   - 🇹🇷 土耳其 (Turkey) 05 - xiaoliue
+  - 🇹🇷 土耳其 (Turkey) 06 - xiaoliue
 rules:
 - MATCH,PROXIES

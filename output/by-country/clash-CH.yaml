@@ -5,54 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇭 CH 01 - xiaoliue
-  type: vless
-  server: 5.75.195.83
-  port: 56879
-  uuid: f8847ac2-e586-400f-841b-00081ea4592e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-- name: 🇨🇭 CH 02 - xiaoliue
-  type: vless
-  server: 185.18.250.245
-  port: 443
-  uuid: f77299ea-e13d-417d-8cdc-ce5566dfc94b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: edu.ruangguru.com.r3xxe.eu.cc
-  network: ws
-  ws-opts:
-    path: /nl-tw
-    headers:
-      Host: edu.ruangguru.com.r3xxe.eu.cc
-- name: 🇨🇭 CH 03 - xiaoliue
   type: ss
   server: 132.243.175.144
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
   udp: true
-- name: 🇨🇭 CH 04 - xiaoliue
-  type: vless
-  server: 128.241.25.72
-  port: 30021
-  uuid: 65f26a08-9a5e-4b28-9004-f98676cc1e49
+- name: 🇨🇭 CH 02 - xiaoliue
+  type: ss
+  server: 132.243.175.144
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -60,8 +25,6 @@ proxy-groups:
   - AUTO
   - 🇨🇭 CH 01 - xiaoliue
   - 🇨🇭 CH 02 - xiaoliue
-  - 🇨🇭 CH 03 - xiaoliue
-  - 🇨🇭 CH 04 - xiaoliue
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -69,7 +32,5 @@ proxy-groups:
   proxies:
   - 🇨🇭 CH 01 - xiaoliue
   - 🇨🇭 CH 02 - xiaoliue
-  - 🇨🇭 CH 03 - xiaoliue
-  - 🇨🇭 CH 04 - xiaoliue
 rules:
 - MATCH,PROXIES

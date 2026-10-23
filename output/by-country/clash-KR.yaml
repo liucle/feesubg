@@ -17,20 +17,22 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: random
 - name: 🇰🇷 韩国 (South Korea) 02 - xiaoliue
-  type: ss
-  server: 141.164.45.187
-  port: 9090
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
+  type: vmess
+  server: jp4.998998.best
+  port: 443
+  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
+  alterId: 0
+  cipher: auto
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nat12.9966338.xyz
+  network: ws
+  ws-opts:
+    path: /vvvvvvvvv
+    headers:
+      Host: nat12.9966338.xyz
 - name: 🇰🇷 韩国 (South Korea) 03 - xiaoliue
-  type: ss
-  server: 141.164.45.187
-  port: 5498
-  cipher: aes-256-gcm
-  password: lGqs95QkFHo2NV
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 04 - xiaoliue
   type: vless
   server: 151.245.106.49
   port: 2053
@@ -42,7 +44,7 @@ proxies:
     public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 05 - xiaoliue
+- name: 🇰🇷 韩国 (South Korea) 04 - xiaoliue
   type: vless
   server: 151.245.106.49
   port: 2053
@@ -54,7 +56,21 @@ proxies:
     public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
   servername: www.cloudflare.com
   client-fingerprint: random
+- name: 🇰🇷 韩国 (South Korea) 05 - xiaoliue
+  type: ss
+  server: 141.164.45.187
+  port: 6679
+  cipher: aes-256-gcm
+  password: TEzjfAYq2IjtuoS
+  udp: true
 - name: 🇰🇷 韩国 (South Korea) 06 - xiaoliue
+  type: ss
+  server: 141.164.45.187
+  port: 5498
+  cipher: aes-256-gcm
+  password: lGqs95QkFHo2NV
+  udp: true
+- name: 🇰🇷 韩国 (South Korea) 07 - xiaoliue
   type: vless
   server: 151.245.106.49
   port: 2053
@@ -77,6 +93,7 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 04 - xiaoliue
   - 🇰🇷 韩国 (South Korea) 05 - xiaoliue
   - 🇰🇷 韩国 (South Korea) 06 - xiaoliue
+  - 🇰🇷 韩国 (South Korea) 07 - xiaoliue
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -88,5 +105,6 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 04 - xiaoliue
   - 🇰🇷 韩国 (South Korea) 05 - xiaoliue
   - 🇰🇷 韩国 (South Korea) 06 - xiaoliue
+  - 🇰🇷 韩国 (South Korea) 07 - xiaoliue
 rules:
 - MATCH,PROXIES

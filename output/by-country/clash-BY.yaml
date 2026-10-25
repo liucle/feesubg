@@ -56,16 +56,6 @@ proxies:
     path: /vless
     headers:
       Host: 178.172.227.228
-- name: 🇧🇾 BY 05 - xiaoliue
-  type: vmess
-  server: 23.162.200.198
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -75,7 +65,6 @@ proxy-groups:
   - 🇧🇾 BY 02 - xiaoliue
   - 🇧🇾 BY 03 - xiaoliue
   - 🇧🇾 BY 04 - xiaoliue
-  - 🇧🇾 BY 05 - xiaoliue
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -85,6 +74,5 @@ proxy-groups:
   - 🇧🇾 BY 02 - xiaoliue
   - 🇧🇾 BY 03 - xiaoliue
   - 🇧🇾 BY 04 - xiaoliue
-  - 🇧🇾 BY 05 - xiaoliue
 rules:
 - MATCH,PROXIES

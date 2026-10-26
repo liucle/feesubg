@@ -6,14 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇭 PH 01 - xiaoliue"
+        "🇵🇭 PH 01 - xiaoliue",
+        "🇵🇭 PH 02 - xiaoliue"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇭 PH 01 - xiaoliue"
+        "🇵🇭 PH 01 - xiaoliue",
+        "🇵🇭 PH 02 - xiaoliue"
       ],
       "url": "https://www.google.com/generate_204"
     },

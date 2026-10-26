@@ -5,13 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇲🇽 MX 01 - xiaoliue
-  type: ss
-  server: 64.177.90.30
-  port: 8388
-  cipher: aes-256-gcm
-  password: BWyPPTusFKhGgzKh
-  udp: true
-- name: 🇲🇽 MX 02 - xiaoliue
   type: vless
   server: 149.104.90.21
   port: 19167
@@ -20,9 +13,63 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: mx001.zestapp778.com
+- name: 🇲🇽 MX 02 - xiaoliue
+  type: vless
+  server: mx001.zestapp778.com
+  port: 19167
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: mx001.zestapp778.com
 - name: 🇲🇽 MX 03 - xiaoliue
   type: vless
+  server: mx001.zestapp778.com
+  port: 19167
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: mx001.zestapp778.com
+- name: 🇲🇽 MX 04 - xiaoliue
+  type: vless
   server: 149.104.90.21
+  port: 19167
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: mx001.zestapp778.com
+- name: 🇲🇽 MX 05 - xiaoliue
+  type: vless
+  server: mx001.zestapp778.com
+  port: 19167
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: mx001.zestapp778.com
+- name: 🇲🇽 MX 06 - xiaoliue
+  type: vless
+  server: 149.104.90.21
+  port: 19167
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 149.104.90.21
+- name: 🇲🇽 MX 07 - xiaoliue
+  type: vless
+  server: 149.104.90.21
+  port: 19167
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: mx001.zestapp778.com
+- name: 🇲🇽 MX 08 - xiaoliue
+  type: vless
+  server: mx001.zestapp778.com
   port: 19167
   uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
   udp: true
@@ -37,6 +84,11 @@ proxy-groups:
   - 🇲🇽 MX 01 - xiaoliue
   - 🇲🇽 MX 02 - xiaoliue
   - 🇲🇽 MX 03 - xiaoliue
+  - 🇲🇽 MX 04 - xiaoliue
+  - 🇲🇽 MX 05 - xiaoliue
+  - 🇲🇽 MX 06 - xiaoliue
+  - 🇲🇽 MX 07 - xiaoliue
+  - 🇲🇽 MX 08 - xiaoliue
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -45,5 +97,10 @@ proxy-groups:
   - 🇲🇽 MX 01 - xiaoliue
   - 🇲🇽 MX 02 - xiaoliue
   - 🇲🇽 MX 03 - xiaoliue
+  - 🇲🇽 MX 04 - xiaoliue
+  - 🇲🇽 MX 05 - xiaoliue
+  - 🇲🇽 MX 06 - xiaoliue
+  - 🇲🇽 MX 07 - xiaoliue
+  - 🇲🇽 MX 08 - xiaoliue
 rules:
 - MATCH,PROXIES

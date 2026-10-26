@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇹🇭 TH 01 - xiaoliue
   type: vless
-  server: 38.60.254.50
+  server: th001.zestapp778.com
   port: 22222
   uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
   udp: true
@@ -14,6 +14,33 @@ proxies:
   skip-cert-verify: true
   servername: th001.zestapp778.com
 - name: 🇹🇭 TH 02 - xiaoliue
+  type: vless
+  server: 38.60.254.50
+  port: 22222
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: th001.zestapp778.com
+- name: 🇹🇭 TH 03 - xiaoliue
+  type: vless
+  server: 38.60.254.50
+  port: 22222
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: th001.zestapp778.com
+- name: 🇹🇭 TH 04 - xiaoliue
+  type: vless
+  server: th001.zestapp778.com
+  port: 22222
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: th001.zestapp778.com
+- name: 🇹🇭 TH 05 - xiaoliue
   type: vless
   server: 103.86.49.57
   port: 80
@@ -25,8 +52,8 @@ proxies:
   ws-opts:
     path: /ws
     headers:
-      Host: v2ray.simspeedup.com
-- name: 🇹🇭 TH 03 - xiaoliue
+      Host: aIs.SpEeDtEsT.nEt
+- name: 🇹🇭 TH 06 - xiaoliue
   type: vless
   server: 104.16.10.9
   port: 443
@@ -40,25 +67,7 @@ proxies:
     path: /ws
     headers:
       Host: v2ray.simspeedup.com
-- name: 🇹🇭 TH 04 - xiaoliue
-  type: vless
-  server: th001.zestapp778.com
-  port: 22222
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: th001.zestapp778.com
-- name: 🇹🇭 TH 05 - xiaoliue
-  type: vless
-  server: 38.60.254.50
-  port: 22222
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: th001.zestapp778.com
-- name: 🇹🇭 TH 06 - xiaoliue
+- name: 🇹🇭 TH 07 - xiaoliue
   type: vless
   server: 103.86.49.57
   port: 80
@@ -70,16 +79,44 @@ proxies:
   ws-opts:
     path: /ws
     headers:
-      Host: ais.speedtest.net
-- name: 🇹🇭 TH 07 - xiaoliue
+      Host: v2ray.simspeedup.com
+- name: 🇹🇭 TH 08 - xiaoliue
   type: vless
-  server: th001.zestapp778.com
+  server: 104.16.10.2
+  port: 443
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: v2ray.simspeedup.com
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: v2ray.simspeedup.com
+- name: 🇹🇭 TH 09 - xiaoliue
+  type: vless
+  server: 38.60.254.50
   port: 22222
   uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
   udp: true
   tls: true
   skip-cert-verify: true
   servername: th001.zestapp778.com
+- name: 🇹🇭 TH 10 - xiaoliue
+  type: vless
+  server: 104.16.10.185
+  port: 443
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: v2ray.simspeedup.com
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: v2ray.simspeedup.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -92,6 +129,9 @@ proxy-groups:
   - 🇹🇭 TH 05 - xiaoliue
   - 🇹🇭 TH 06 - xiaoliue
   - 🇹🇭 TH 07 - xiaoliue
+  - 🇹🇭 TH 08 - xiaoliue
+  - 🇹🇭 TH 09 - xiaoliue
+  - 🇹🇭 TH 10 - xiaoliue
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -104,5 +144,8 @@ proxy-groups:
   - 🇹🇭 TH 05 - xiaoliue
   - 🇹🇭 TH 06 - xiaoliue
   - 🇹🇭 TH 07 - xiaoliue
+  - 🇹🇭 TH 08 - xiaoliue
+  - 🇹🇭 TH 09 - xiaoliue
+  - 🇹🇭 TH 10 - xiaoliue
 rules:
 - MATCH,PROXIES

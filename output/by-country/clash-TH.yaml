@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇹🇭 TH 01 - xiaoliue
   type: vless
-  server: 38.60.254.50
+  server: th001.zestapp778.com
   port: 22222
   uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
   udp: true
@@ -22,55 +22,6 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: th001.zestapp778.com
-- name: 🇹🇭 TH 03 - xiaoliue
-  type: vless
-  server: th001.zestapp778.com
-  port: 22222
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: th001.zestapp778.com
-- name: 🇹🇭 TH 04 - xiaoliue
-  type: vless
-  server: 38.60.254.50
-  port: 22222
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: th001.zestapp778.com
-- name: 🇹🇭 TH 05 - xiaoliue
-  type: vless
-  server: 103.86.49.57
-  port: 80
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: ais.speedtest.net
-- name: 🇹🇭 TH 06 - xiaoliue
-  type: vless
-  server: 38.60.254.50
-  port: 22222
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: th001.zestapp778.com
-- name: 🇹🇭 TH 07 - xiaoliue
-  type: vless
-  server: 38.60.254.50
-  port: 22222
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: th001.zestapp778.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -78,11 +29,6 @@ proxy-groups:
   - AUTO
   - 🇹🇭 TH 01 - xiaoliue
   - 🇹🇭 TH 02 - xiaoliue
-  - 🇹🇭 TH 03 - xiaoliue
-  - 🇹🇭 TH 04 - xiaoliue
-  - 🇹🇭 TH 05 - xiaoliue
-  - 🇹🇭 TH 06 - xiaoliue
-  - 🇹🇭 TH 07 - xiaoliue
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -90,10 +36,5 @@ proxy-groups:
   proxies:
   - 🇹🇭 TH 01 - xiaoliue
   - 🇹🇭 TH 02 - xiaoliue
-  - 🇹🇭 TH 03 - xiaoliue
-  - 🇹🇭 TH 04 - xiaoliue
-  - 🇹🇭 TH 05 - xiaoliue
-  - 🇹🇭 TH 06 - xiaoliue
-  - 🇹🇭 TH 07 - xiaoliue
 rules:
 - MATCH,PROXIES

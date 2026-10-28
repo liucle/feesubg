@@ -20,15 +20,6 @@ proxies:
   udp: true
 - name: 🇨🇭 CH 03 - xiaoliue
   type: vless
-  server: 149.33.15.213
-  port: 443
-  uuid: 054362fb-e485-4a3f-9568-4c5b0f60e074
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: swz.proxyplankton.ru
-- name: 🇨🇭 CH 04 - xiaoliue
-  type: vless
   server: 208.69.78.217
   port: 2053
   uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
@@ -47,7 +38,6 @@ proxy-groups:
   - 🇨🇭 CH 01 - xiaoliue
   - 🇨🇭 CH 02 - xiaoliue
   - 🇨🇭 CH 03 - xiaoliue
-  - 🇨🇭 CH 04 - xiaoliue
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -56,6 +46,5 @@ proxy-groups:
   - 🇨🇭 CH 01 - xiaoliue
   - 🇨🇭 CH 02 - xiaoliue
   - 🇨🇭 CH 03 - xiaoliue
-  - 🇨🇭 CH 04 - xiaoliue
 rules:
 - MATCH,PROXIES

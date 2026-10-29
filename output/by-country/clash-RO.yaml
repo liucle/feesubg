@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇷🇴 RO 01 - xiaoliue
   type: vless
-  server: edge10.cyrionflare.com
+  server: 178.83.45.226
   port: 2052
   uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
   udp: true
@@ -14,7 +14,7 @@ proxies:
   skip-cert-verify: true
 - name: 🇷🇴 RO 02 - xiaoliue
   type: vless
-  server: edge10.cyrionflare.com
+  server: 155.117.5.208
   port: 2052
   uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
   udp: true
@@ -29,51 +29,12 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇷🇴 RO 04 - xiaoliue
-  type: vless
-  server: 155.117.5.208
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇷🇴 RO 05 - xiaoliue
-  type: ss
-  server: 154.46.31.106
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
-  udp: true
-- name: 🇷🇴 RO 06 - xiaoliue
-  type: vless
-  server: 178.83.45.226
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇷🇴 RO 07 - xiaoliue
-  type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇷🇴 RO 08 - xiaoliue
   type: ss
   server: 194.68.44.42
   port: 64546
   cipher: chacha20-ietf-poly1305
   password: U83u9OGpvSatIUW7LsWffr
   udp: true
-- name: 🇷🇴 RO 09 - xiaoliue
-  type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-  udp: true
-  tls: false
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -83,11 +44,6 @@ proxy-groups:
   - 🇷🇴 RO 02 - xiaoliue
   - 🇷🇴 RO 03 - xiaoliue
   - 🇷🇴 RO 04 - xiaoliue
-  - 🇷🇴 RO 05 - xiaoliue
-  - 🇷🇴 RO 06 - xiaoliue
-  - 🇷🇴 RO 07 - xiaoliue
-  - 🇷🇴 RO 08 - xiaoliue
-  - 🇷🇴 RO 09 - xiaoliue
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -97,10 +53,5 @@ proxy-groups:
   - 🇷🇴 RO 02 - xiaoliue
   - 🇷🇴 RO 03 - xiaoliue
   - 🇷🇴 RO 04 - xiaoliue
-  - 🇷🇴 RO 05 - xiaoliue
-  - 🇷🇴 RO 06 - xiaoliue
-  - 🇷🇴 RO 07 - xiaoliue
-  - 🇷🇴 RO 08 - xiaoliue
-  - 🇷🇴 RO 09 - xiaoliue
 rules:
 - MATCH,PROXIES

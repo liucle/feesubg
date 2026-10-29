@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇵🇭 PH 01 - xiaoliue
   type: vless
-  server: 130.94.53.13
+  server: ph001.zestapp778.com
   port: 15656
   uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
   udp: true
@@ -15,7 +15,7 @@ proxies:
   servername: ph001.zestapp778.com
 - name: 🇵🇭 PH 02 - xiaoliue
   type: vless
-  server: 130.94.53.13
+  server: ph001.zestapp778.com
   port: 15656
   uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
   udp: true
@@ -33,7 +33,7 @@ proxies:
   servername: ph001.zestapp778.com
 - name: 🇵🇭 PH 04 - xiaoliue
   type: vless
-  server: ph001.zestapp778.com
+  server: 130.94.53.13
   port: 15656
   uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
   udp: true
@@ -43,6 +43,42 @@ proxies:
 - name: 🇵🇭 PH 05 - xiaoliue
   type: vless
   server: ph001.zestapp778.com
+  port: 15656
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ph001.zestapp778.com
+- name: 🇵🇭 PH 06 - xiaoliue
+  type: vless
+  server: 130.94.53.13
+  port: 15656
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ph001.zestapp778.com
+- name: 🇵🇭 PH 07 - xiaoliue
+  type: vless
+  server: ph001.zestapp778.com
+  port: 15656
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ph001.zestapp778.com
+- name: 🇵🇭 PH 08 - xiaoliue
+  type: vless
+  server: 130.94.53.13
+  port: 15656
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ph001.zestapp778.com
+- name: 🇵🇭 PH 09 - xiaoliue
+  type: vless
+  server: 130.94.53.13
   port: 15656
   uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
   udp: true
@@ -59,6 +95,10 @@ proxy-groups:
   - 🇵🇭 PH 03 - xiaoliue
   - 🇵🇭 PH 04 - xiaoliue
   - 🇵🇭 PH 05 - xiaoliue
+  - 🇵🇭 PH 06 - xiaoliue
+  - 🇵🇭 PH 07 - xiaoliue
+  - 🇵🇭 PH 08 - xiaoliue
+  - 🇵🇭 PH 09 - xiaoliue
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -69,5 +109,9 @@ proxy-groups:
   - 🇵🇭 PH 03 - xiaoliue
   - 🇵🇭 PH 04 - xiaoliue
   - 🇵🇭 PH 05 - xiaoliue
+  - 🇵🇭 PH 06 - xiaoliue
+  - 🇵🇭 PH 07 - xiaoliue
+  - 🇵🇭 PH 08 - xiaoliue
+  - 🇵🇭 PH 09 - xiaoliue
 rules:
 - MATCH,PROXIES

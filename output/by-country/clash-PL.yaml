@@ -31,22 +31,6 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: 2.26.6.1
-- name: 🇵🇱 PL 04 - xiaoliue
-  type: ss
-  server: pol.rvpn.app
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: 8z2OB_gvFvpKgjFi8s9Cvw
-  udp: true
-- name: 🇵🇱 PL 05 - xiaoliue
-  type: vless
-  server: 2.26.6.1
-  port: 2087
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 2.26.6.1
 proxy-groups:
 - name: PROXIES
   type: select
@@ -55,8 +39,6 @@ proxy-groups:
   - 🇵🇱 PL 01 - xiaoliue
   - 🇵🇱 PL 02 - xiaoliue
   - 🇵🇱 PL 03 - xiaoliue
-  - 🇵🇱 PL 04 - xiaoliue
-  - 🇵🇱 PL 05 - xiaoliue
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -65,7 +47,5 @@ proxy-groups:
   - 🇵🇱 PL 01 - xiaoliue
   - 🇵🇱 PL 02 - xiaoliue
   - 🇵🇱 PL 03 - xiaoliue
-  - 🇵🇱 PL 04 - xiaoliue
-  - 🇵🇱 PL 05 - xiaoliue
 rules:
 - MATCH,PROXIES

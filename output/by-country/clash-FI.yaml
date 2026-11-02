@@ -25,13 +25,41 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: hw6.divarkhaghazi.com.
+  servername: hw6.divarkhaghazi.com
   network: ws
   ws-opts:
     path: /
     headers:
       Host: hw6.divarkhaghazi.com.
 - name: 🇫🇮 FI 03 - xiaoliue
+  type: vless
+  server: hw6.divarkhaghazi.com
+  port: 465
+  uuid: 09f30c46-3964-41ce-882a-72aee83ddd42
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: hw6.divarkhaghazi.com.
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hw6.divarkhaghazi.com.
+- name: 🇫🇮 FI 04 - xiaoliue
+  type: vless
+  server: 65.109.211.81
+  port: 465
+  uuid: 09f30c46-3964-41ce-882a-72aee83ddd42
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: hw6.divarkhaghazi.com.
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hw6.divarkhaghazi.com.
+- name: 🇫🇮 FI 05 - xiaoliue
   type: vless
   server: 45.144.234.157
   port: 14430
@@ -52,6 +80,8 @@ proxy-groups:
   - 🇫🇮 FI 01 - xiaoliue
   - 🇫🇮 FI 02 - xiaoliue
   - 🇫🇮 FI 03 - xiaoliue
+  - 🇫🇮 FI 04 - xiaoliue
+  - 🇫🇮 FI 05 - xiaoliue
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -60,5 +90,7 @@ proxy-groups:
   - 🇫🇮 FI 01 - xiaoliue
   - 🇫🇮 FI 02 - xiaoliue
   - 🇫🇮 FI 03 - xiaoliue
+  - 🇫🇮 FI 04 - xiaoliue
+  - 🇫🇮 FI 05 - xiaoliue
 rules:
 - MATCH,PROXIES

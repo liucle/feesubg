@@ -26,6 +26,34 @@ proxies:
     headers:
       Host: mbr.rkn-pediki.site
 - name: 🇷🇺 俄罗斯 (Russia) 03 - xiaoliue
+  type: vless
+  server: lvi.su
+  port: 443
+  uuid: 7b91b2c3-8af3-449b-a555-00c9460989f4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lvi.su
+  network: ws
+  ws-opts:
+    path: /vpn-relay?token=27fede42482b3c29d4c1c9640876c250&pool=whitelist2
+    headers:
+      Host: lvi.su
+- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaoliue
+  type: vless
+  server: 177.202.73.151
+  port: 443
+  uuid: 7b91b2c3-8af3-449b-a555-00c9460989f4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lvi.su
+  network: ws
+  ws-opts:
+    path: /vpn-relay?token=27fede42482b3c29d4c1c9640876c250&pool=whitelist2
+    headers:
+      Host: lvi.su
+- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaoliue
   type: ss
   server: 46.17.47.58
   port: 18443
@@ -40,6 +68,8 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - xiaoliue
   - 🇷🇺 俄罗斯 (Russia) 02 - xiaoliue
   - 🇷🇺 俄罗斯 (Russia) 03 - xiaoliue
+  - 🇷🇺 俄罗斯 (Russia) 04 - xiaoliue
+  - 🇷🇺 俄罗斯 (Russia) 05 - xiaoliue
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -48,5 +78,7 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - xiaoliue
   - 🇷🇺 俄罗斯 (Russia) 02 - xiaoliue
   - 🇷🇺 俄罗斯 (Russia) 03 - xiaoliue
+  - 🇷🇺 俄罗斯 (Russia) 04 - xiaoliue
+  - 🇷🇺 俄罗斯 (Russia) 05 - xiaoliue
 rules:
 - MATCH,PROXIES

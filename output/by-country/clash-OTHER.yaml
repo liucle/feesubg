@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - xiaoliue
   type: vless
-  server: 104.17.50.227
+  server: 188.114.97.6
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -20,7 +20,7 @@ proxies:
       Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 02 - xiaoliue
   type: vless
-  server: 104.18.42.98
+  server: 104.19.33.25
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -34,7 +34,7 @@ proxies:
       Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 03 - xiaoliue
   type: vless
-  server: 104.17.210.74
+  server: 104.21.0.87
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -48,7 +48,7 @@ proxies:
       Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 04 - xiaoliue
   type: vless
-  server: 104.16.10.234
+  server: 104.16.10.104
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -62,7 +62,7 @@ proxies:
       Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 05 - xiaoliue
   type: vless
-  server: 104.19.33.25
+  server: 104.21.70.21
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -76,7 +76,7 @@ proxies:
       Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 06 - xiaoliue
   type: vless
-  server: 104.16.10.9
+  server: 188.114.98.0
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -90,7 +90,7 @@ proxies:
       Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 07 - xiaoliue
   type: vless
-  server: 104.16.10.2
+  server: 104.18.42.98
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -117,48 +117,22 @@ proxies:
     headers:
       Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 09 - xiaoliue
-  type: vless
-  server: 188.114.98.0
+  type: vmess
+  server: 104.21.80.180
   port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: jp3.yohototo.top
+  servername: vmess.lbw666.dpdns.org
   network: ws
   ws-opts:
-    path: /tyxyws
+    path: /ws
     headers:
-      Host: jp3.yohototo.top
+      Host: vmess.lbw666.dpdns.org
 - name: 🌐 其他地区 (Other) 10 - xiaoliue
-  type: vless
-  server: 104.21.70.21
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 11 - xiaoliue
-  type: vless
-  server: 104.21.70.21
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 12 - xiaoliue
   type: vless
   server: 188.114.97.6
   port: 443
@@ -172,9 +146,9 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 13 - xiaoliue
+- name: 🌐 其他地区 (Other) 11 - xiaoliue
   type: vless
-  server: 104.16.10.48
+  server: 104.16.10.2
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -186,9 +160,39 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 14 - xiaoliue
+- name: 🌐 其他地区 (Other) 12 - xiaoliue
   type: vless
   server: 104.16.0.1
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 13 - xiaoliue
+  type: vmess
+  server: 104.21.91.53
+  port: 8443
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: v2ray1.dozapp.xyz
+  network: ws
+  ws-opts:
+    path: /lMnsZUN4/
+    headers:
+      Host: v2ray1.dozapp.xyz
+- name: 🌐 其他地区 (Other) 14 - xiaoliue
+  type: vless
+  server: 104.16.111.195
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -202,7 +206,7 @@ proxies:
       Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 15 - xiaoliue
   type: vless
-  server: 104.16.10.2
+  server: 104.21.70.228
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -211,12 +215,12 @@ proxies:
   servername: jp3.yohototo.top
   network: ws
   ws-opts:
-    path: /tyxyws#telegram--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI
+    path: /tyxyws
     headers:
       Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 16 - xiaoliue
   type: vless
-  server: 104.21.6.186
+  server: 104.21.219.160
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -230,7 +234,7 @@ proxies:
       Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 17 - xiaoliue
   type: vless
-  server: 104.21.0.87
+  server: 104.21.34.106
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -244,7 +248,7 @@ proxies:
       Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 18 - xiaoliue
   type: vless
-  server: 104.16.0.1
+  server: 104.16.10.135
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -258,7 +262,7 @@ proxies:
       Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 19 - xiaoliue
   type: vless
-  server: 104.24.0.1
+  server: 104.16.10.56
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -272,7 +276,7 @@ proxies:
       Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 20 - xiaoliue
   type: vless
-  server: 104.27.46.35
+  server: 172.64.190.13
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -286,7 +290,7 @@ proxies:
       Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 21 - xiaoliue
   type: vless
-  server: 172.64.190.13
+  server: 104.16.10.22
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -300,7 +304,7 @@ proxies:
       Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 22 - xiaoliue
   type: vless
-  server: 104.16.10.234
+  server: 104.19.164.155
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -314,7 +318,7 @@ proxies:
       Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 23 - xiaoliue
   type: vless
-  server: 104.18.42.98
+  server: 172.64.190.13
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -328,7 +332,7 @@ proxies:
       Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 24 - xiaoliue
   type: vless
-  server: 104.16.10.2
+  server: 104.21.0.87
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -342,7 +346,7 @@ proxies:
       Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 25 - xiaoliue
   type: vless
-  server: 104.19.33.25
+  server: 104.21.0.87
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -356,7 +360,7 @@ proxies:
       Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 26 - xiaoliue
   type: vless
-  server: 104.16.111.102
+  server: 104.19.48.107
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -370,7 +374,7 @@ proxies:
       Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 27 - xiaoliue
   type: vless
-  server: 104.19.48.107
+  server: 188.114.98.0
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -384,7 +388,21 @@ proxies:
       Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 28 - xiaoliue
   type: vless
-  server: 104.18.37.127
+  server: 104.16.10.2
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 29 - xiaoliue
+  type: vless
+  server: 104.17.50.53
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -429,6 +447,7 @@ proxy-groups:
   - 🌐 其他地区 (Other) 26 - xiaoliue
   - 🌐 其他地区 (Other) 27 - xiaoliue
   - 🌐 其他地区 (Other) 28 - xiaoliue
+  - 🌐 其他地区 (Other) 29 - xiaoliue
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -462,5 +481,6 @@ proxy-groups:
   - 🌐 其他地区 (Other) 26 - xiaoliue
   - 🌐 其他地区 (Other) 27 - xiaoliue
   - 🌐 其他地区 (Other) 28 - xiaoliue
+  - 🌐 其他地区 (Other) 29 - xiaoliue
 rules:
 - MATCH,PROXIES
